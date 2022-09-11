@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./public/**/*.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       backgroundColor: {
@@ -16,6 +16,9 @@ module.exports = {
         laptop: "1024px",
         desktop: "1280px",
         Xdesktop: "1536px",
+      },
+      fontFamily: {
+        electra: ["Electra", "cursive"],
       },
     },
   },

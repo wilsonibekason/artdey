@@ -9,3 +9,8 @@
     --gradient-base-accent-1: #103948;
     --gradient-base-accent-2: #103948;
 }
+
+@font-face {
+    font-family: "Electra";
+    src: url("../public/fonts/electra.otf");
+}
