@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --payment-terms-background-color: #fcfcfc;
+    --gradient-base-background-1: #fcfcfc;
+    --gradient-base-background-2: #ebeced;
+    --gradient-base-accent-1: #103948;
+    --gradient-base-accent-2: #103948;
+}
