@@ -9,6 +9,7 @@ module.exports = {
         gradientBaseBg: "#fcfcfc",
         gradientBaseBg2: "#ebeced",
         gradientBaseAccent: "#103948",
+        banner: "#c0b8b8da",
       },
       screens: {
         phone: "640px",
@@ -19,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         electra: ["Electra", "cursive"],
+      },
+      fontSize: {
+        md: ["16px", "22px"],
       },
     },
   },
