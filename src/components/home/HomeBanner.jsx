@@ -15,7 +15,7 @@ const HomeBanner = () => {
   return (
     <>
       <div>
-        <div className={`h-screen max-h-screen my-20`}>
+        <div className={`h-screen max-h-screen my-40`}>
           <div className={`${BannerGridLayout} max-h-[40vh] h-[40vh]`}>
             <div
               className={`${BannerGridChild2} bg-gradientBaseAccent ${itemsCenter}`}

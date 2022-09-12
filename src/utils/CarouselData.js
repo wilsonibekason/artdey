@@ -118,3 +118,26 @@ export const HomeFeaturedData = [
     id: 4,
   },
 ];
+
+export const collectionData = [
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-03-29_at_1.32.44_PM.png?v=1617021591",
+    name: "Luli",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_1452.jpg?v=1642782467&width=750",
+    name: "Omoniye Gilbert",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-04-03_at_4.31.29_PM.png?v=1617464166&width=750",
+    name: "Nifemi William",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-04-09_at_10.11.14_AM.png?v=1617959500&width=750",
+    name: "Ogechukwu ijeofor",
+  },
+];

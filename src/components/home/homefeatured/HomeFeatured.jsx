@@ -9,11 +9,11 @@ const HomeFeatured = () => {
   const { gridLayoutSection } = Layout;
   return (
     <>
-      <div>
+      <div className="mt-40">
         <div className={`${flexCol} space-y-12`}>
-          <div className={`${flexCentered} my-12`}>
+          <div className={`${flexCentered} my-4`}>
             <h4 className={`${paragraph2} text-2xl`}>
-              Explore our new arrivals
+              Expertly curated, affordably priced
             </h4>
           </div>
           <div className={`${gridLayoutSection}`}>
