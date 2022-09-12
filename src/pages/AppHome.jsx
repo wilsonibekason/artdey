@@ -1,6 +1,7 @@
 import React from "react";
 import {
   HomeBanner,
+  HomeBannerMore,
   HomeCarousel,
   HomeExplore,
   HomeFeatured,
@@ -30,6 +31,7 @@ const AppHome = () => {
       </div>
       <div className="mx-28 bg-gradientBaseBg">
         <HomeNewsLetter />
+        <HomeBannerMore />
       </div>
     </div>
   );

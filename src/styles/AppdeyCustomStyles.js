@@ -8,6 +8,7 @@ const styles = {
   flexRowJustify: "flex flex-row justify-between items-center",
   flexRow: "flex flex-row",
   flexCentered: "flex justify-center items-center ",
+  flexStart: "flex justify-start items-start",
   ///flex column
   flexCol: "flex flex-col ",
 
