@@ -22,7 +22,9 @@ module.exports = {
         electra: ["Electra", "cursive"],
       },
       fontSize: {
+        xss: ["12px", "14px"],
         md: ["16px", "22px"],
+        xxl: ["40px", "44px"],
       },
     },
   },
