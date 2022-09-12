@@ -2,6 +2,7 @@ const styles = {
   paragraph: "font-electra font-normal text-md text-gray-500 tracking-wide",
   paragraph2: "font-electra font-normal text-gray-500 tracking-wide",
   paragraph3: "font-electra font-normal text-gray-700 tracking-wide",
+  paragraphCustom: "font-electra font-normal  tracking-wide",
   flexRowJustify: "flex flex-row justify-between items-center",
   flexRow: "flex flex-row",
   flexCentered: "flex justify-center items-center ",
@@ -12,9 +13,13 @@ const styles = {
   itemsCenter: "flex items-center justify-center ",
   transitions: "transition ease-in-out duration-600",
   transitions2: "transition-all ease-in-out duration-900 delay-900",
+  ButtonStyle: "font-electra text-lg font-light  rounded-full",
 };
 
 export const Layout = {
   gridLayoutSection: "grid grid-cols-3 gap-8",
+  BannerGridLayout: "grid grid-cols-12 gap-0 ",
+  BannerGridChild: "col-span-4",
+  BannerGridChild2: "col-span-8",
 };
 export default styles;

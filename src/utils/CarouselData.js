@@ -85,3 +85,36 @@ export const ExploreData = [
     id: 7,
   },
 ];
+
+export const HomeFeaturedData = [
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG-20220212-WA0011.jpg?v=1645715761&width=533",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG-20220212-WA0012_923ac943-f4f9-4ef0-8ddc-1ec362ba7d77.jpg?v=1649245850",
+    tag: "sunset series",
+    author: "taiye ajaikaye",
+    price: "250",
+    id: 2,
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/7f50ecc6f5204520bcbea7bd87c7dd57.thumbnail.0000000.jpg?v=1611132731&width=533",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_6927_Facetune_18-01-2021-11-47-25.jpg?v=1611132942&width=720",
+    tag: "oreke stool",
+    author: "the durus",
+    price: "250",
+    id: 3,
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/sweetlove.jpg?v=1644189428&width=1066",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-07022022-001601.jpg?v=1644189429&width=360",
+    tag: "sweet love ",
+    author: "waheed najeem",
+    price: "300",
+    id: 4,
+  },
+];

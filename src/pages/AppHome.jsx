@@ -1,5 +1,11 @@
 import React from "react";
-import { HomeCarousel, HomeExplore, HomeHeader } from "../components/home";
+import {
+  HomeBanner,
+  HomeCarousel,
+  HomeExplore,
+  HomeFeatured,
+  HomeHeader,
+} from "../components/home";
 
 const AppHome = () => {
   return (
@@ -7,6 +13,8 @@ const AppHome = () => {
       <HomeHeader />
       <HomeCarousel />
       <HomeExplore />
+      <HomeBanner />
+      <HomeFeatured />
     </div>
   );
 };
