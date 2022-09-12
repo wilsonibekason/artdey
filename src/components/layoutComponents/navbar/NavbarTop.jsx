@@ -6,13 +6,16 @@ import styles from "../../../styles/AppdeyCustomStyles";
 
 const NavbarTop = () => {
   const { AiOutlineSearch, CgProfile, BsMinecartLoaded } = useIcon();
-  const { flexRowJustify, flexRow } = styles;
+  const { flexRowJustify, flexRow, transitions } = styles;
   return (
     <>
       <div className={`py-4`}>
         <div className={`${flexRowJustify}`}>
           <div>
-            <AiOutlineSearch size={25} className={`font-light text-gray-500`} />
+            <AiOutlineSearch
+              size={25}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
+            />
           </div>
           <div>
             <Link to="/">
@@ -20,10 +23,13 @@ const NavbarTop = () => {
             </Link>
           </div>
           <div className={`${flexRow} space-x-6`}>
-            <CgProfile size={25} className={`font-light text-gray-500`} />
+            <CgProfile
+              size={25}
+              className={`font-light text-gray-500  hover:scale-105 ${transitions}`}
+            />
             <BsMinecartLoaded
               size={25}
-              className={`font-light text-gray-500`}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
             />
           </div>
         </div>

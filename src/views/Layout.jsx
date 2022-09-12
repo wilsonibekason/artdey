@@ -5,12 +5,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <BannerTop />
-      <div className={`mx-28`}>
-        <Navbar />
-      </div>
-      <div>{children}</div>
-      <div>
-        <Footer />
+      <div className={`bg-gradientBaseBg`}>
+        <div className={`mx-28 `}>
+          <Navbar />
+        </div>
+        <div className={``}>{children}</div>
+        <div className={``}>
+          <Footer />
+        </div>
       </div>
     </>
   );
