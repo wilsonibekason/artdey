@@ -158,3 +158,31 @@ export const HomeJournalData = [
       " Here are some helpful tips that will help you navigate buying art for the first time. Buying art is a great way to diversify your portfolio and introduce a whole",
   },
 ];
+
+export const FooterTopData = [
+  {
+    title: "",
+    members: [
+      {
+        name: "About Us",
+        link: "https://aboutus.com/",
+      },
+      {
+        name: "FAQS",
+        link: "https://faqs.com/",
+      },
+      {
+        name: "Terms Of Service",
+        link: "https://termsofservice.com/",
+      },
+      {
+        name: "Contact Us",
+        link: "https://contactus.com/",
+      },
+      {
+        name: "Refund Policy",
+        link: "https://refundpolicy.com/",
+      },
+    ],
+  },
+];

@@ -9,6 +9,7 @@ import {
   HomeInspiredCollections,
   HomeNewsLetter,
 } from "../components/home";
+import Footer from "../components/home/footer/Footer";
 import { HomeJournal } from "../components/home/homejournal";
 
 const AppHome = () => {
@@ -32,6 +33,12 @@ const AppHome = () => {
       <div className="mx-28 bg-gradientBaseBg">
         <HomeNewsLetter />
         <HomeBannerMore />
+      </div>
+
+      <div className="bg-gradientBaseBg2 ">
+        <div className="">
+          <Footer />
+        </div>
       </div>
     </div>
   );
