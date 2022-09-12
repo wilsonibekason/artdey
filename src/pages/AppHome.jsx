@@ -6,6 +6,7 @@ import {
   HomeFeatured,
   HomeHeader,
   HomeInspiredCollections,
+  HomeNewsLetter,
 } from "../components/home";
 import { HomeJournal } from "../components/home/homejournal";
 
@@ -26,6 +27,9 @@ const AppHome = () => {
             <HomeJournal />
           </div>
         </div>
+      </div>
+      <div className="mx-28 bg-gradientBaseBg">
+        <HomeNewsLetter />
       </div>
     </div>
   );

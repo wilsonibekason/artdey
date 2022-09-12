@@ -27,7 +27,7 @@ const HomeJournal = () => {
             {/*  */}
           </div>
           <div className={`${flexCentered}`}>
-            <div>
+            <div className="pb-4">
               <button
                 className={`${ButtonStyle} py-2.5 px-5 bg-gradientBaseAccent text-white text-md mt-10`}
               >
