@@ -5,9 +5,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <BannerTop />
-      <Navbar />
-      {children}
-      <Footer />
+      <div className={`mx-28`}>
+        <Navbar />
+      </div>
+      <div>{children}</div>
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };
