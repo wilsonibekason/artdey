@@ -7,6 +7,7 @@ import {
   HomeHeader,
   HomeInspiredCollections,
 } from "../components/home";
+import { HomeJournal } from "../components/home/homejournal";
 
 const AppHome = () => {
   return (
@@ -20,6 +21,11 @@ const AppHome = () => {
       </div>
       <div className="bg-gradientBaseAccent ">
         <HomeInspiredCollections />
+        <div className="bg-gradientBaseBg2">
+          <div className="mx-28">
+            <HomeJournal />
+          </div>
+        </div>
       </div>
     </div>
   );

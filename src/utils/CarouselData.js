@@ -141,3 +141,20 @@ export const collectionData = [
     name: "Ogechukwu ijeofor",
   },
 ];
+
+export const HomeJournalData = [
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/articles/SUS_5396.jpg?v=1660818249&width=720",
+    title: "The Essentic Mr Chauw",
+    description:
+      " Inspired by African deities, folklores and myths, Nerome Borke, also known as Mr Chauw, is a visual artist with an affinity for black and gold, which is prominent in all",
+  },
+  {
+    image:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/articles/ezgif-5-ec72ef1b8d.jpg?v=1662138576&width=720",
+    title: "    How To Buy Art For Your Home- 5 tips for beginners",
+    description:
+      " Here are some helpful tips that will help you navigate buying art for the first time. Buying art is a great way to diversify your portfolio and introduce a whole",
+  },
+];

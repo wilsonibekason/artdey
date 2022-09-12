@@ -3,7 +3,8 @@ import { useIcon } from "../../services/OnIconContext";
 import styles from "../../styles/AppdeyCustomStyles";
 
 const HomeCollectionCard = ({ image, name }) => {
-  const { flexCol, flexCentered, paragraphCustom, flexRow } = styles;
+  const { flexCol, flexCentered, paragraphCustom, flexRow, transitions } =
+    styles;
   const { BsArrowRight } = useIcon();
   return (
     <div className="group">
@@ -15,7 +16,7 @@ const HomeCollectionCard = ({ image, name }) => {
               alt=""
               width={700}
               height={300}
-              className="h-full max-w-full w-full object-cover group-hover:scale-105"
+              className={` ${transitions} h-full max-w-full w-full object-cover group-hover:scale-105`}
             />
           </div>
         </div>
