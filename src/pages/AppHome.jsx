@@ -11,7 +11,7 @@ import {
 } from "../components/home";
 import Footer from "../components/home/footer/Footer";
 import { HomeJournal } from "../components/home/homejournal";
-import { NavDropdown } from "../components/navContent";
+import { AboutContentDropdown, NavDropdown } from "../components/navContent";
 import MyModal from "../components/searchInput/SearchInput";
 
 const AppHome = () => {
@@ -19,6 +19,7 @@ const AppHome = () => {
     <div>
       <div className="mx-28 bg-gradientBaseBg">
         <NavDropdown />
+        <AboutContentDropdown />
         <HomeHeader />
         <HomeCarousel />
         <HomeExplore />

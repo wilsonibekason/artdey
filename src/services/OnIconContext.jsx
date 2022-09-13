@@ -9,16 +9,15 @@ const IconContext = createContext({});
 export const IconProvider = ({ children }) => {
   let [isOpen, setIsOpen] = useState(false);
   const [showNavContent, setShowNavContents] = useState(false);
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
 
-  function openModal() {
-    setIsOpen(true);
-  }
-
+  const closeModal = () => setIsOpen((prev) => !prev);
+  const openModal = () => setIsOpen((prev) => !prev);
   const openNav = () => setShowNavContents((prev) => !prev);
   const hideNav = () => setShowNavContents((prev) => !prev);
+  const showAboutModal = () => setShowAboutDropdown((prev) => !prev);
+  const hideAboutModal = () => setShowAboutDropdown((prev) => !prev);
+  //// about dropdown simple navbar logic
   return (
     <IconContext.Provider
       value={{
@@ -38,6 +37,9 @@ export const IconProvider = ({ children }) => {
         setShowNavContents,
         openNav,
         hideNav,
+        showAboutModal,
+        showAboutDropdown,
+        hideAboutModal,
       }}
     >
       {children}

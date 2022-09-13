@@ -167,22 +167,27 @@ export const FooterTopData = [
     members: [
       {
         name: "About Us",
+        id: uuid(),
         link: "https://aboutus.com/",
       },
       {
         name: "FAQS",
+        id: uuid(),
         link: "https://faqs.com/",
       },
       {
         name: "Terms Of Service",
+        id: uuid(),
         link: "https://termsofservice.com/",
       },
       {
         name: "Contact Us",
+        id: uuid(),
         link: "https://contactus.com/",
       },
       {
         name: "Refund Policy",
+        id: uuid(),
         link: "https://refundpolicy.com/",
       },
     ],
