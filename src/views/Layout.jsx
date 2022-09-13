@@ -1,5 +1,5 @@
 import React from "react";
-import { BannerTop, Footer, Navbar } from "../components/layoutComponents";
+import { BannerTop, MainFooter, Navbar } from "../components/layoutComponents";
 
 const Layout = ({ children }) => {
   return (
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         </div>
         <div className={``}>{children}</div>
         <div className={``}>
-          <Footer />
+          <MainFooter />
         </div>
       </div>
     </>

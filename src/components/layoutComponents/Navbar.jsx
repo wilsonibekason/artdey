@@ -5,8 +5,10 @@ import NavbarTop from "./navbar/NavbarTop";
 const Navbar = () => {
   return (
     <>
-      <NavbarTop />
-      <NavbarBottom />
+      <div className="">
+        <NavbarTop />
+        <NavbarBottom />
+      </div>
     </>
   );
 };

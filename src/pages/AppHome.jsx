@@ -11,6 +11,7 @@ import {
 } from "../components/home";
 import Footer from "../components/home/footer/Footer";
 import { HomeJournal } from "../components/home/homejournal";
+import { MainFooter } from "../components/layoutComponents";
 import { AboutContentDropdown, NavDropdown } from "../components/navContent";
 import MyModal from "../components/searchInput/SearchInput";
 
@@ -41,11 +42,11 @@ const AppHome = () => {
       <div>
         <MyModal />
       </div>
-      <div className="bg-gradientBaseBg2 ">
+      {/* <div className="bg-gradientBaseBg2 ">
         <div className="">
-          <Footer />
+          <MainFooter />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -46,7 +46,7 @@ const NavDropdown = () => {
                           <>
                             <p>
                               <span
-                                key={index}
+                                key={item.id}
                                 className={`${paragraphCustom} text-md tracking-tight  text-gray-500 ${
                                   hover === item.id ? "underline" : ""
                                 } ${transitions}`}
@@ -61,7 +61,7 @@ const NavDropdown = () => {
                                   .sort((a, b) => a.name.localeCompare(b.name))
                                   .map((list, index) => (
                                     <li
-                                      key={index}
+                                      key={list.id}
                                       className={`${paragraphCustom} text-md tracking-tight text-gray-500 leading-8 ${
                                         hover === list.id ? "underline" : ""
                                       } ${transitions}`}

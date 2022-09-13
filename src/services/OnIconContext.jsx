@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { BsMinecartLoaded, BsArrowRight } from "react-icons/bs";
@@ -10,6 +10,35 @@ export const IconProvider = ({ children }) => {
   let [isOpen, setIsOpen] = useState(false);
   const [showNavContent, setShowNavContents] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+  /// navbar visibility
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(false);
+      } else {
+        // if scroll up show the navbar
+        setShow(true);
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   const closeModal = () => setIsOpen((prev) => !prev);
   const openModal = () => setIsOpen((prev) => !prev);
@@ -40,6 +69,7 @@ export const IconProvider = ({ children }) => {
         showAboutModal,
         showAboutDropdown,
         hideAboutModal,
+        show,
       }}
     >
       {children}

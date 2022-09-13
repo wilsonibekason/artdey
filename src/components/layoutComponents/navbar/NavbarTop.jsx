@@ -24,10 +24,12 @@ const NavbarTop = () => {
             </Link>
           </div>
           <div className={`${flexRow} space-x-6`}>
-            <CgProfile
-              size={25}
-              className={`font-light text-gray-500  hover:scale-105 ${transitions}`}
-            />
+            <Link to={"/login"}>
+              <CgProfile
+                size={25}
+                className={`font-light text-gray-500  hover:scale-105 ${transitions}`}
+              />
+            </Link>
             <BsMinecartLoaded
               size={25}
               className={`font-light text-gray-500 hover:scale-105 ${transitions}`}

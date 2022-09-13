@@ -29,6 +29,12 @@ module.exports = {
       lineHeight: {
         wide: "4",
       },
+      colors: {
+        paymentTermsBg: "#fcfcfc",
+        gradientBaseBg: "#fcfcfc",
+        gradientBaseBg2: "#ebeced",
+        gradientBaseAccent: "#103948",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/forms")],
