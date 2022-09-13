@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useIcon } from "../../services/OnIconContext";
 import styles from "../../styles/AppdeyCustomStyles";
 
@@ -87,11 +88,13 @@ const AppLogin = () => {
                   </button>
                 </div>
                 <div>
-                  <p
-                    className={`${paragraphCustom} underline text-gray-700 hover:text-gray-900 ${transitions} `}
-                  >
-                    create account
-                  </p>
+                  <Link to={"/register"}>
+                    <p
+                      className={`${paragraphCustom} underline text-gray-700 hover:text-gray-900 ${transitions} `}
+                    >
+                      create account
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
