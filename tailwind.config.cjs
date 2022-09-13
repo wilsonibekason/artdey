@@ -26,6 +26,9 @@ module.exports = {
         md: ["16px", "22px"],
         xxl: ["40px", "44px"],
       },
+      lineHeight: {
+        wide: "4",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/forms")],

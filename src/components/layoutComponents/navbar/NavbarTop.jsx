@@ -5,7 +5,7 @@ import { useIcon } from "../../../services/OnIconContext";
 import styles from "../../../styles/AppdeyCustomStyles";
 
 const NavbarTop = () => {
-  const { AiOutlineSearch, CgProfile, BsMinecartLoaded } = useIcon();
+  const { AiOutlineSearch, CgProfile, BsMinecartLoaded, openModal } = useIcon();
   const { flexRowJustify, flexRow, transitions } = styles;
   return (
     <>
@@ -15,6 +15,7 @@ const NavbarTop = () => {
             <AiOutlineSearch
               size={25}
               className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
+              onClick={openModal}
             />
           </div>
           <div>

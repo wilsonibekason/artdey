@@ -31,5 +31,6 @@ export const Layout = {
   CollectionsLayout:
     "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   PaymentLayout: "grid grid-cols-8 gap-4",
+  AdvanceNavLayout: "grid grid-cols-6 gap-4",
 };
 export default styles;

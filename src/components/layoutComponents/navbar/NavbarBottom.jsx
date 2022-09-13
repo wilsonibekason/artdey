@@ -3,7 +3,7 @@ import { useIcon } from "../../../services/OnIconContext";
 import styles from "../../../styles/AppdeyCustomStyles";
 
 const NavbarBottom = () => {
-  const { MdOutlineKeyboardArrowDown } = useIcon();
+  const { MdOutlineKeyboardArrowDown, openNav } = useIcon();
   const { itemsCenter, flexRow, paragraph, transitions } = styles;
   return (
     <div className={`${itemsCenter} py-2`}>
@@ -11,6 +11,7 @@ const NavbarBottom = () => {
         <div className={`${flexRow} space-x-2 items-center`}>
           <p
             className={`${paragraph} hover:underline hover:text-gray-700 ${transitions}`}
+            onClick={openNav}
           >
             Shop
           </p>

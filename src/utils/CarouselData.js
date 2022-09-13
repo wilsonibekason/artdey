@@ -1,3 +1,5 @@
+import uuid from "react-uuid";
+
 export const CarouselData = [
   {
     image:
@@ -205,3 +207,157 @@ export const SelectOptionData = [
     value: "",
   },
 ];
+
+export const AdvanceNavContentData = [
+  {
+    title: "Artist",
+    link: "",
+    id: uuid(),
+    collections: [
+      {
+        name: "Abiola Daniel",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Charles osare",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "bright osadole",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "edem ",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "john adediron",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    title: "Price",
+    link: "",
+    id: uuid(),
+    collections: [
+      {
+        name: "under $300",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "under $500",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "$1000 and over ",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    title: "Medium",
+    link: "",
+    id: uuid(),
+    collections: [
+      {
+        name: "Art Objects",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Painting",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Photography",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Sculpture",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    title: "Subject",
+    link: "",
+    id: uuid(),
+    collections: [
+      {
+        name: "abstract",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "nude",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "landscape",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "sculpture",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    title: "Gift Cards",
+    link: "",
+    id: uuid(),
+    collections: [],
+  },
+  {
+    title: "Discover all art",
+    link: "",
+    id: uuid(),
+    collections: [],
+  },
+];
+/** 
+ * 
+ * 
+ *   <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Payment successful
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Your payment has been successfully submitted. We’ve sent
+                      you an email with all of the details of your order.
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={closeModal}
+                    >
+                      Got it, thanks!
+                    </button>
+                  </div>
+ */
