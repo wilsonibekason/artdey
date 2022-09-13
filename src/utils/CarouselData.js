@@ -186,3 +186,22 @@ export const FooterTopData = [
     ],
   },
 ];
+
+export const SelectOptionData = [
+  {
+    name: "Norway(USD$)",
+    value: "",
+  },
+  {
+    name: "United State (USD$)",
+    value: "",
+  },
+  {
+    name: "Poland(PLU)",
+    value: "",
+  },
+  {
+    name: "Switzerland(CHF)",
+    value: "",
+  },
+];

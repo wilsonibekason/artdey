@@ -5,8 +5,15 @@ import styles from "../../../styles/AppdeyCustomStyles";
 import { FooterTopData } from "../../../utils/CarouselData";
 
 const FooterTop = () => {
-  const { flexCol, flexRow, flexRowJustify, paragraphCustom, transitions } =
-    styles;
+  const {
+    flexCol,
+    flexRow,
+    flexRowJustify,
+    paragraphCustom,
+    transitions,
+    inputStyles,
+    labelStyleCustom,
+  } = styles;
   const { BsArrowRight } = useIcon();
   return (
     <>
@@ -34,7 +41,7 @@ const FooterTop = () => {
               </div>
             </div>
             <div>
-              <img src={artdey_logo} alt="" className="w-40" />
+              <img src={artdey_logo} alt="" className="w-56" />
             </div>
             <div className={``}>
               <ul className={`${flexCol} space-y-3`}>
@@ -56,26 +63,27 @@ const FooterTop = () => {
           <h3 className={`${paragraphCustom} text-gray-900 text-xl`}>
             Subscribe to our emails
           </h3>
+          {/* email submittmission */}
           <div>
-            <div
-              className={`relative  group
-          `}
-            >
+            <div className={`relative  group  max-w-[35%] `}>
               <span
                 className={`absolute right-2 top-4 focus-within:text-gray-700`}
               >
                 <BsArrowRight size={20} className="text-gray-500" />
               </span>
-
               <input
                 type="text"
                 placeholder="Email"
-                className={`
-                border border-solid border-gray-300 outline-none bg-white w-[26rem] py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow-lg 
-            `}
+                autoComplete="email"
+                required
+                className={`${inputStyles}`}
               />
+              <label htmlFor="email" className={`${labelStyleCustom}`}>
+                Email
+              </label>
             </div>
           </div>
+          {/* end of email submission */}
         </div>
       </div>
     </>
