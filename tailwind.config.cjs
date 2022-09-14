@@ -35,6 +35,9 @@ module.exports = {
         gradientBaseBg2: "#ebeced",
         gradientBaseAccent: "#103948",
       },
+      borderColor: {
+        gradientBaseAccent: "#103948",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/forms")],

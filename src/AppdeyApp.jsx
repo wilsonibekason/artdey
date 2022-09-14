@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { ArtistDetail, Home, Login, Register } from "./views";
+import { ArtistDetail, Home, Login, PageUnknown, Register } from "./views";
 const AppdeyApp = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const AppdeyApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/*" element={<PageUnknown />} />
         <Route path="/art/:id" element={<ArtistDetail />} />
       </Routes>
     </>
