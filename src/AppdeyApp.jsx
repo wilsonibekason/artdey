@@ -13,6 +13,7 @@ import {
   Login,
   Pages,
   PageUnknown,
+  Policy,
   Register,
 } from "./views";
 const AppdeyApp = () => {
@@ -29,6 +30,10 @@ const AppdeyApp = () => {
           {/*appdeyApp pages child routes  */}
           <Route path="about-us" element={<AboutMain />} />
           <Route path="faqs" element={<Faqs />} />
+          {/* <Route path="terms-of-service" element={<Policies />} /> */}
+          {/* <Route path="refund-policy" element={<TermsOfServices />} /> */}
+        </Route>
+        <Route path="/policy" element={<Policy />}>
           <Route path="terms-of-service" element={<Policies />} />
           <Route path="refund-policy" element={<TermsOfServices />} />
         </Route>
