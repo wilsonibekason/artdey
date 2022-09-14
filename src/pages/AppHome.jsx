@@ -19,8 +19,8 @@ const AppHome = () => {
   return (
     <div>
       <div className="mx-28 bg-gradientBaseBg">
-        <NavDropdown />
-        <AboutContentDropdown />
+        {/* <NavDropdown /> */}
+        {/* <AboutContentDropdown /> */}
         <HomeHeader />
         <HomeCarousel />
         <HomeExplore />
@@ -39,9 +39,7 @@ const AppHome = () => {
         <HomeNewsLetter />
         <HomeBannerMore />
       </div>
-      <div>
-        <MyModal />
-      </div>
+      <div>{/* <MyModal /> */}</div>
       {/* <div className="bg-gradientBaseBg2 ">
         <div className="">
           <MainFooter />

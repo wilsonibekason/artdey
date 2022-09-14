@@ -6,3 +6,4 @@ export { default as PageUnknown } from "./PageUnknown";
 export { default as Aboutus } from "./Aboutus";
 export { default as Pages } from "./Pages";
 export { default as Policy } from "./Policy";
+export { default as Cart } from "./Cart";

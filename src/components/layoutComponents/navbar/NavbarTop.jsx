@@ -30,10 +30,12 @@ const NavbarTop = () => {
                 className={`font-light text-gray-500  hover:scale-105 ${transitions}`}
               />
             </Link>
-            <BsMinecartLoaded
-              size={25}
-              className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
-            />
+            <Link to="/cart">
+              <BsMinecartLoaded
+                size={25}
+                className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import TermsofService from "./components/policiesLayout/terms-of-service/Termsof
 import {
   Aboutus,
   ArtistDetail,
+  Cart,
   Home,
   Login,
   Pages,
@@ -26,6 +27,7 @@ const AppdeyApp = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/*" element={<PageUnknown />} />
         <Route path="/art/:id" element={<ArtistDetail />} />
+        <Route path="/cart" element={<Cart />} />
         {/* <Route path="/pages/about-us" element={<Aboutus />} /> */}
         <Route path="/pages" element={<Pages />}>
           {/*appdeyApp pages child routes  */}

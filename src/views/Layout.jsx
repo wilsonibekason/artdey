@@ -1,5 +1,7 @@
 import React from "react";
 import { BannerTop, MainFooter, Navbar } from "../components/layoutComponents";
+import { AboutContentDropdown, NavDropdown } from "../components/navContent";
+import MyModal from "../components/searchInput/SearchInput";
 
 const Layout = ({ children }) => {
   return (
@@ -9,6 +11,9 @@ const Layout = ({ children }) => {
         <div className={`mx-28 `}>
           <Navbar />
         </div>
+        <NavDropdown />
+        <AboutContentDropdown />
+        <MyModal />
         <div className={``}>{children}</div>
         <div className={``}>
           <MainFooter />

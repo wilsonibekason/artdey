@@ -18,7 +18,8 @@ const Policies = () => {
 
           <div className={`${flexCol} space-y-2`}>
             <h2
-              className={`${paragraphCustom} text-xl text-gradientBaseAccent tracking-wider uppercase `}
+              className={`${paragraphCustom} text-lg
+               text-gradientBaseAccent tracking-wider capitalize `}
             >
               Returns & Exchanges
             </h2>
