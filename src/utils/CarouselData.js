@@ -340,6 +340,48 @@ export const AdvanceNavContentData = [
     collections: [],
   },
 ];
+// productArtMoreData contents
+export const ProductArtMoreData = [
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-27082022-131737.jpg?v=1661599071&width=360",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-27082022-131737.jpg?v=1661599071&width=360",
+    tag: "Fearless",
+    price: "1500",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8291.jpg?v=1661342402&width=360",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8291.jpg?v=1661342402&width=360",
+    tag: "Bits",
+    price: "750",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsApp_Image_2022-06-14_at_3.42.27_PM.jpg?v=1655469842&width=360",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsApp_Image_2022-06-14_at_3.42.27_PM.jpg?v=1655469842&width=360",
+    tag: "Unity",
+    price: "850",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-27082022-131737.jpg?v=1661599071&width=360",
+    hiddenImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsApp_Image_2022-06-14_at_3.42.27_PM.jpg?v=1655469842&width=360",
+    tag: "Playtime",
+    price: "2500",
+    id: uuid(),
+  },
+];
+
+//
+
 /** 
  * 
  * 

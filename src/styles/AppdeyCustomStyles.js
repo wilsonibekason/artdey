@@ -39,5 +39,6 @@ export const Layout = {
   ProductDetailLayout: "grid grid-cols-12 gap-0",
   ProductDetailChild: "col-span-4",
   ProductDetailChild2: "col-span-8",
+  gridMoreLayoutSection: "grid grid-cols-4 gap-6",
 };
 export default styles;
