@@ -27,7 +27,7 @@ const SimilarArtistCard = ({
               src={activeImage}
               alt=""
               className={`object-cover max-w-full w-full h-full ${
-                hover === id && "block absolute z-[1]"
+                hover === id && "block absolute z-[1] "
               } `}
               width={800}
               height={552}
@@ -42,7 +42,7 @@ const SimilarArtistCard = ({
                 "backdrop-blur-md "
               }  ${
                 hover !== id && "hidden"
-              }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90`}
+              }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90 `}
               width={800}
               height={552}
             />

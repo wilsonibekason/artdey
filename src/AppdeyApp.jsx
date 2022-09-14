@@ -1,6 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { ArtistDetail, Home, Login, PageUnknown, Register } from "./views";
+import {
+  Aboutus,
+  ArtistDetail,
+  Home,
+  Login,
+  PageUnknown,
+  Register,
+} from "./views";
 const AppdeyApp = () => {
   return (
     <>
@@ -10,6 +17,7 @@ const AppdeyApp = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/*" element={<PageUnknown />} />
         <Route path="/art/:id" element={<ArtistDetail />} />
+        <Route path="/about" element={<Aboutus />} />
       </Routes>
     </>
   );
