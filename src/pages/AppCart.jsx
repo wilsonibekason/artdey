@@ -1,12 +1,12 @@
 import React from "react";
-import { CartEmpty, CartMain } from "../components/cart";
+import { CartMain, CartProductMore } from "../components/cart";
 
 const AppCart = () => {
   return (
     <>
-      <div>
+      <div className="mx-28 my-20">
         <CartMain />
-        <CartEmpty />
+        <CartProductMore />
       </div>
     </>
   );
