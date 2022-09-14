@@ -8,7 +8,7 @@ const ImageGrid = () => {
   const { BannerGridLayout, BannerGridChild, BannerGridChild2 } = Layout;
   return (
     <>
-      <div className={` my-20`}>
+      <div className={` my-40`}>
         <div className={`${BannerGridLayout}`}>
           <div
             className={`${BannerGridChild} max-w-full max-h-[1280px] bg-gradientBaseBg2 relative`}
