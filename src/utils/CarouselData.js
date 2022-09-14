@@ -168,7 +168,7 @@ export const FooterTopData = [
       {
         name: "About Us",
         id: uuid(),
-        link: "about-us",
+        link: "pages/about-us",
       },
       {
         name: "FAQS",
@@ -178,17 +178,17 @@ export const FooterTopData = [
       {
         name: "Terms Of Service",
         id: uuid(),
-        link: "terms-of-service",
+        link: "pages/terms-of-service",
       },
       // {
       //   name: "Contact Us",
       //   id: uuid(),
-      //   link: "terms-of-service",
+      //   link: "pages/terms-of-service",
       // },
       {
         name: "Refund Policy",
         id: uuid(),
-        link: "refund-policy",
+        link: "pages/refund-policy",
       },
     ],
   },
@@ -380,6 +380,36 @@ export const ProductArtMoreData = [
   },
 ];
 
+export const faqsData = [
+  {
+    heading: "Payment ",
+    desc: "We accept all major debit and credit cards. ",
+  },
+  {
+    heading: "Stock ",
+    desc: "Most of our pieces are one of a kind, however, for some pieces, the artist will be able to replicate. Please contact us if a desired piece is out of stock. For that, please allow for additional processing and shipping time.",
+  },
+  {
+    heading: "Shipping and Processing",
+    desc: "Please allow up to two weeks after the order is received before orders are shipped. Shipping is via DHL and a tracking number will be emailed. We will ensure to notify customers for any unforeseen delays in shipping and processing. ",
+  },
+  {
+    heading: "Packaging ",
+    desc: "All art will be shipped rolled up in a carton.  Paintings are NOT stretched, and frames are NOT included. Buyers will need to stretch and frame paintings at their own cost. ",
+  },
+  {
+    heading: "Customs and Duties",
+    desc: "All customers are liable for any customs or duties that may be levied on delivery. Packages will be shipped directly from the artists in West Africa. ",
+  },
+  {
+    heading: "Return & Exchange ",
+    desc: "All art sold on the website is non-refundable. We are happy to work with you to ensure that you are delighted with the piece you've chosen and we take extreme care to make sure that orders are correctly packed and the piece is in perfect condition. If the item received is damaged, you will be eligible for store credit. . ",
+  },
+  {
+    heading: "Contact ",
+    desc: "For any additional inquiries, including custom orders, please send an email to hello@artdey.com",
+  },
+];
 //
 
 /** 
