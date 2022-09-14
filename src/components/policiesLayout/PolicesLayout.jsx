@@ -3,7 +3,7 @@ import React from "react";
 const PolicesLayout = ({ children }) => {
   return (
     <>
-      <div>{children}</div>
+      <div className="mx-28 my-20">{children}</div>
     </>
   );
 };

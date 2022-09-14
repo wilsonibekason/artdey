@@ -178,7 +178,7 @@ export const FooterTopData = [
       {
         name: "Terms Of Service",
         id: uuid(),
-        link: "pages/terms-of-service",
+        link: "policy/terms-of-service",
       },
       // {
       //   name: "Contact Us",
@@ -188,7 +188,7 @@ export const FooterTopData = [
       {
         name: "Refund Policy",
         id: uuid(),
-        link: "pages/refund-policy",
+        link: "policy/refund-policy",
       },
     ],
   },
