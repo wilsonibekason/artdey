@@ -168,27 +168,27 @@ export const FooterTopData = [
       {
         name: "About Us",
         id: uuid(),
-        link: "https://aboutus.com/",
+        link: "pages/about-us",
       },
       {
         name: "FAQS",
         id: uuid(),
-        link: "https://faqs.com/",
+        link: "pages/about-us",
       },
       {
         name: "Terms Of Service",
         id: uuid(),
-        link: "https://termsofservice.com/",
+        link: "pages/about-us",
       },
       {
         name: "Contact Us",
         id: uuid(),
-        link: "https://contactus.com/",
+        link: "pages/about-us",
       },
       {
         name: "Refund Policy",
         id: uuid(),
-        link: "https://refundpolicy.com/",
+        link: "pages/about-us",
       },
     ],
   },

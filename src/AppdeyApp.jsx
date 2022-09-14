@@ -17,7 +17,7 @@ const AppdeyApp = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/*" element={<PageUnknown />} />
         <Route path="/art/:id" element={<ArtistDetail />} />
-        <Route path="/about" element={<Aboutus />} />
+        <Route path="/pages/about-us" element={<Aboutus />} />
       </Routes>
     </>
   );

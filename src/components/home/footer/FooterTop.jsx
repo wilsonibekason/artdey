@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { artdey_logo } from "../../../assets";
 import { useIcon } from "../../../services/OnIconContext";
 import styles from "../../../styles/AppdeyCustomStyles";
@@ -26,14 +27,14 @@ const FooterTop = () => {
                   {FooterTopData.map((item, index) =>
                     item.members.map((item, i) => (
                       <li key={i}>
-                        <a
-                          href={item.link}
+                        <Link
+                          to={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           className={`${paragraphCustom} text-gray-800 tracking-wider ${transitions} hover:underline`}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))
                   )}

@@ -1,6 +1,6 @@
 import React from "react";
 import { AppAboutus } from "../pages";
-import { Layout } from "../styles/AppdeyCustomStyles";
+import Layout from "./Layout";
 
 const Aboutus = () => {
   return (
