@@ -9,7 +9,7 @@ import { ArtDetailLayout } from "../components/details/ArtistDetail";
 const AppArtistDetail = () => {
   return (
     <>
-      <div className="bg-gradientBaseBg mx-28">
+      <div className="bg-gradientBaseBg mx-28 my-10">
         <ArtDetailLayout />
         <GuarranteedCheckout />
         <Artist />

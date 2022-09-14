@@ -23,6 +23,8 @@ const styles = {
     "peer border border-solid border-gray-300 outline-none bg-transparent w-[26rem] py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow-lg placeholder:invisible",
   listStyles:
     "font-electra font-normal tracking-wide leading-6 text-gray-500 capitalize",
+
+  borderStructure: "border border-solid",
 };
 
 export const Layout = {
@@ -34,5 +36,8 @@ export const Layout = {
     "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   PaymentLayout: "grid grid-cols-8 gap-4",
   AdvanceNavLayout: "grid grid-cols-6 gap-4",
+  ProductDetailLayout: "grid grid-cols-12 gap-0",
+  ProductDetailChild: "col-span-4",
+  ProductDetailChild2: "col-span-8",
 };
 export default styles;

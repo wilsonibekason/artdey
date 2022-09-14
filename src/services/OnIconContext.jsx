@@ -3,7 +3,7 @@ import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { BsMinecartLoaded, BsArrowRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown, MdOutlineCancel } from "react-icons/md";
-
+import { FiDownload } from "react-icons/fi";
 const IconContext = createContext({});
 
 export const IconProvider = ({ children }) => {
@@ -57,6 +57,7 @@ export const IconProvider = ({ children }) => {
         BsArrowRight,
         MdOutlineCancel,
         AiOutlineClose,
+        FiDownload,
         /// end of icons export
         isOpen,
         setIsOpen,
