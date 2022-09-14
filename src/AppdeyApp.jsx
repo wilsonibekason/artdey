@@ -6,6 +6,7 @@ import {
   Policies,
   TermsOfServices,
 } from "./components/pagelayout";
+import TermsofService from "./components/policiesLayout/terms-of-service/TermsofService";
 import {
   Aboutus,
   ArtistDetail,
@@ -34,8 +35,8 @@ const AppdeyApp = () => {
           {/* <Route path="refund-policy" element={<TermsOfServices />} /> */}
         </Route>
         <Route path="/policy" element={<Policy />}>
-          <Route path="terms-of-service" element={<Policies />} />
-          <Route path="refund-policy" element={<TermsOfServices />} />
+          <Route path="terms-of-service" element={<TermsofService />} />
+          <Route path="refund-policy" element={<Policies />} />
         </Route>
       </Routes>
     </>
