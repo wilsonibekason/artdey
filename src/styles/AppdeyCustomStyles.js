@@ -22,8 +22,12 @@ const styles = {
   ButtonStyle: "font-electra text-lg font-light  rounded-full",
   labelStyleCustom:
     "absolute mt-1 left-2 text-gray-800 text-sm  font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
+  labelStyleCustom2:
+    "absolute mt-1 left-2 text-gray-800 text-sm  font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
   inputStyles:
     "peer border border-solid border-gray-300 outline-none bg-transparent w-[26rem] py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow placeholder:invisible",
+  inputStyles2:
+    "peer border border-solid border-gray-300 outline-none bg-transparent  py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow placeholder:invisible",
   listStyles:
     "font-electra font-normal tracking-wide leading-6 text-gray-500 capitalize",
   inputStylesCustom:
@@ -32,7 +36,8 @@ const styles = {
     "absolute mt-1 left-2 text-gray-800 text-sm  font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
   labelStyleCustom3:
     "absolute  left-2   font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
-
+  inputStylesCustom4:
+    "peer border border-solid border-gray-300 outline-none bg-transparent py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow placeholder:invisible",
   borderStructure: "border border-solid",
   imagesStyles: "object-cover max-w-full w-full h-full",
 };

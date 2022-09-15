@@ -9,6 +9,8 @@ const HomeNewsLetter = () => {
     paragraphCustom,
     inputStyles,
     labelStyleCustom,
+    inputStyles2,
+    labelStyleCustom2,
   } = styles;
   const { BsArrowRight } = useIcon();
   return (
@@ -45,9 +47,9 @@ const HomeNewsLetter = () => {
                   placeholder="Email"
                   autoComplete="email"
                   required
-                  className={`${inputStyles}`}
+                  className={`${inputStyles2} w-full md:w-[26rem]`}
                 />
-                <label htmlFor="email" className={`${labelStyleCustom}`}>
+                <label htmlFor="email" className={`${labelStyleCustom2}`}>
                   Email
                 </label>
               </div>

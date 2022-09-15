@@ -16,7 +16,7 @@ const HomeBannerMore = () => {
       <div className={`my-10`}>
         <div className={`${BannerGridLayout} `}>
           <div className={`${BannerGridChild}`}>
-            <div className={`h-[500px]`}>
+            <div className={` h-[300px] md:h-[500px]`}>
               <img
                 src="https://cdn.shopify.com/s/files/1/0425/2542/5825/files/matosan_2.jpg?v=1657886385&width=750"
                 alt=""
@@ -27,9 +27,11 @@ const HomeBannerMore = () => {
             </div>
           </div>
           {/* card contents */}
-          <div className={`${BannerGridChild2} bg-gradientBaseAccent relative`}>
+          <div
+            className={`${BannerGridChild2} bg-gradientBaseAccent relative sm:h-[300px]`}
+          >
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
-              <div className={`${flexCol} ${flexStart} max-w-[90%] space-y-3`}>
+              <div className={`${flexCol} ${flexStart} max-w-[90%] space-y-3 `}>
                 <p
                   className={`${paragraphCustom} text-xl  md:text-2xl tracking-wider  text-gray-300 `}
                 >
