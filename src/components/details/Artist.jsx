@@ -2,7 +2,13 @@ import React from "react";
 import styles, { Layout } from "../../styles/AppdeyCustomStyles";
 
 const Artist = () => {
-  const { BannerGridChild, BannerGridChild2, BannerGridLayout } = Layout;
+  const {
+    BannerGridChild,
+    BannerGridChild2,
+    BannerGridLayout,
+    BannerGridChild3,
+    BannerGridChild4,
+  } = Layout;
   const {
     flexCol,
     flexCentered,
@@ -15,8 +21,8 @@ const Artist = () => {
     <>
       <div className={`my-10`}>
         <div className={`${BannerGridLayout} `}>
-          <div className={`${BannerGridChild}`}>
-            <div className={`h-[500px]`}>
+          <div className={`${BannerGridChild3}`}>
+            <div className={`  h-[500px] md:h-[700px] lg:h-[500px]`}>
               <img
                 src="https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_7912.jpg?v=1661244261&width=535"
                 alt=""
@@ -27,7 +33,7 @@ const Artist = () => {
             </div>
           </div>
           {/* card contents */}
-          <div className={`${BannerGridChild2} bg-gradientBaseAccent relative`}>
+          <div className={`${BannerGridChild4} bg-gradientBaseAccent relative`}>
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
               <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3`}>
                 <h5

@@ -16,7 +16,7 @@ const GuarranteedCheckout = () => {
               .map((index) => (
                 <div
                   key={index}
-                  className={`shadow rounded w-20 h-16 bg-gradientBaseBg2 border border-gray-700 `}
+                  className={`shadow rounded w-10 h-8 md:w-12 md:h-10 lg:w-20 lg:h-16 bg-gradientBaseBg2 border border-gray-700 `}
                 ></div>
               ))}
           </div>

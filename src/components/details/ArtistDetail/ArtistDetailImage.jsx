@@ -20,23 +20,23 @@ const ArtImageMoreCollections = () => {
   return (
     <>
       <div
-        className={`${flexRow} flex-nowrap gap-x-10 w-full overflow-x-auto scrollbar-none`}
+        className={`flex md:flex-col lg:flex-row flex-nowrap  gap-0 md:gap-y-10 lg:gap-x-10 w-full overflow-x-auto scrollbar-none`}
       >
-        <div className="max-h-80 max-w-[50%] flex-shrink-0">
+        <div className="max-h-80 max-w-full lg:max-w-[50%]  flex-shrink-0">
           <img
             src="https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-23082022-175632.jpg?v=1661270311&width=720"
             alt=""
             className={`object-cover max-h-full max-w-full h-full`}
           />
         </div>
-        <div className={`max-h-80 max-w-[50%] flex-shrink-0`}>
+        <div className={`max-h-80 max-w-full lg:max-w-[50%] flex-shrink-0`}>
           <img
             src="https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-23082022-175632.jpg?v=1661270311&width=720"
             alt=""
             className={`object-cover max-h-full max-w-full h-full`}
           />
         </div>
-        <div className={`max-h-80 max-w-[50%] flex-shrink-0`}>
+        <div className={`max-h-80 max-w-full lg:max-w-[50%] flex-shrink-0`}>
           <img
             src="https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-23082022-175632.jpg?v=1661270311&width=720"
             alt=""
@@ -55,7 +55,9 @@ const ArtistDetailImage = () => {
         className={` max-h-screen max-w-full overflow-y-auto scrollbar-none sticky`}
       >
         <div className={`${flexCol} space-y-10`}>
-          <div>
+          <div
+            className={`phone:block tablet:hidden desktop:block Xdesktop:block`}
+          >
             <ArtMainImage />
           </div>
           <div className={``}>

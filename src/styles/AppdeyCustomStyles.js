@@ -45,20 +45,28 @@ export const Layout = {
   gridLayoutSection: "grid grid-cols-3 gap-8",
   BannerGridLayout: "grid grid-cols-12 gap-0 ",
   BannerGridChild: "col-span-4",
-  BannerGridChild2: "col-span-8",
+  BannerGridChild2: " col-span-8",
+  BannerGridChild3:
+    "col-span-6 tablet:col-span-3 desktop:col-span-4 Xdesktop:col-span-4",
+  BannerGridChild4:
+    " col-span-6 tablet:col-span-9 desktop:col-span-8 Xdesktop:col-span-8",
   CollectionsLayout:
     "grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   JournalCollectionsLayout:
     "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   PaymentLayout: "grid grid-cols-8 gap-4",
   AdvanceNavLayout: "grid grid-cols-6 gap-4",
-  ProductDetailLayout: "grid grid-cols-12 gap-0",
-  ProductDetailChild: "col-span-4",
-  ProductDetailChild2: "col-span-8",
-  gridMoreLayoutSection: "grid grid-cols-4 gap-6",
+  ProductDetailLayout:
+    "grid phone:grid-cols-1  tablet:grid-cols-12 laptop:grid-cols-12 desktop:grid-cols-12 Xdesktop:grid-cols-12  gap-0",
+  ProductDetailChild: "phone:col-span-1 tablet:col-span-6 desktop:col-span-4",
+  ProductDetailChild2: "phone:col-span-1 tablet:col-span-6 desktop:col-span-8",
+  gridMoreLayoutSection:
+    "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 md:gap-6",
   contactGridLayout: "grid grid-cols-12 gap-5",
   contactGridChild: "col-span-6",
   contactGridChild2: "col-span-6",
   contactGridChild3: "col-span-12",
+  ArtistCollectionLayout:
+    "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8 lg:gap-8",
 };
 export default styles;

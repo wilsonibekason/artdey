@@ -6,7 +6,7 @@ import CollectionsByArtistsCards from "./CollectionsByArtistsCards";
 const CollectionByArtist = () => {
   const [hover, setHover] = useState(null);
   const { flexCol, flexCentered, paragraph2, flexStart } = styles;
-  const { gridLayoutSection } = Layout;
+  const { gridLayoutSection, ArtistCollectionLayout } = Layout;
   return (
     <>
       <div className="">
@@ -16,7 +16,7 @@ const CollectionByArtist = () => {
               You might also like
             </h4>
           </div> */}
-          <div className={`${gridLayoutSection}`}>
+          <div className={`${ArtistCollectionLayout}`}>
             {ProductArtMoreData.map((item, index) => (
               <CollectionsByArtistsCards
                 {...item}

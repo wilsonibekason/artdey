@@ -29,7 +29,7 @@ const SimilarArtistLyout = () => {
               />
             ))}
           </div>
-          <div className={`${flexCentered} `}>
+          <div className={`${flexCentered} hidden md:hidden lg:block`}>
             <button
               className={`py-3 px-8 font-electra text-lg text-white font-light bg-gradientBaseAccent rounded-full hover:scale-105`}
             >
