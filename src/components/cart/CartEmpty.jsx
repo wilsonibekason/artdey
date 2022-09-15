@@ -17,7 +17,7 @@ const CartEmpty = () => {
           </h2>
           <div className={`${flexCentered}`}>
             <button
-              className={`${ButtonStyle} px-10 py-3 bg-gradientBaseAccent text-md text-white`}
+              className={`${ButtonStyle} px-10 py-3 bg-gradientBaseAccent text-md text-white ${transitions} hover:bg-gradientBaseBg2 hover:text-gradientBaseAccent tracking-wider`}
               onClick={() => navigate("/", { replace: true })}
             >
               {" "}

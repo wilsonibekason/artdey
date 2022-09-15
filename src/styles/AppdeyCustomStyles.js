@@ -5,15 +5,17 @@ const styles = {
   paragraphCustom: "font-electra font-normal  tracking-wide",
   paragraphCentralised:
     "font-electra font-thin text-xxl  text-center  leading-normal",
+
   flexRowJustify: "flex flex-row justify-between items-center",
   flexRow: "flex flex-row",
   flexCentered: "flex justify-center items-center ",
   flexStart: "flex justify-start items-start",
   ///flex column
   flexCol: "flex flex-col ",
-
+  spanClass: "font-normal text-2xl text-gray-500",
   ///
   itemsCenter: "flex items-center justify-center ",
+  itemsEnd: `flex justify-end`,
   transitions: "transition ease-in-out duration-600",
   transitions2: "transition-all ease-in-out duration-900 delay-900",
   ButtonStyle: "font-electra text-lg font-light  rounded-full",
@@ -31,6 +33,10 @@ const styles = {
     "absolute  left-2   font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
 
   borderStructure: "border border-solid",
+};
+
+export const uniqueStyleComponents = {
+  paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent`,
 };
 
 export const Layout = {
