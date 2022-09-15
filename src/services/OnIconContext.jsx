@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { BsMinecartLoaded, BsArrowRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown, MdOutlineCancel } from "react-icons/md";
@@ -60,6 +60,7 @@ export const IconProvider = ({ children }) => {
         AiOutlineClose,
         FiDownload,
         MdDelete,
+        AiOutlineDown,
         /// end of icons export
         isOpen,
         setIsOpen,

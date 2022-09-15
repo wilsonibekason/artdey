@@ -38,6 +38,7 @@ const styles = {
 
 export const uniqueStyleComponents = {
   paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent`,
+  text: "text-electra text-gradientBaseAccent text-ellipsis text-md font-normal ",
 };
 
 export const Layout = {

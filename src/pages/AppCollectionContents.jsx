@@ -8,7 +8,7 @@ import {
 const AppCollectionContents = () => {
   return (
     <>
-      <div>
+      <div className="mx-28 my-20">
         <CollectionAbout />
         <CollectionFilter />
         <CollectionByArtist />
