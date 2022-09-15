@@ -30,12 +30,12 @@ const AppHome = () => {
       <div className="bg-gradientBaseAccent ">
         <HomeInspiredCollections />
         <div className="bg-gradientBaseBg2">
-          <div className="mx-28">
+          <div className="mx-10 md:mx-12 lg:mx-28">
             <HomeJournal />
           </div>
         </div>
       </div>
-      <div className="mx-28 bg-gradientBaseBg">
+      <div className="mx-10 md:mx-12 lg:mx-28 bg-gradientBaseBg">
         <HomeNewsLetter />
         <HomeBannerMore />
       </div>

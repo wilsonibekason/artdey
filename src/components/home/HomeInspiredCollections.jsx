@@ -24,7 +24,7 @@ const HomeInspiredCollections = () => {
                 Shop By Artist
               </h4>
             </div>
-            <div className={`max-w-[60%]`}>
+            <div className={`max-w-[90%] md:max-w-[90%]  lg:max-w-[60%]`}>
               <p className={`${paragraphCentralised} text-white`}>
                 {" "}
                 Inspired collections that complement your space and style

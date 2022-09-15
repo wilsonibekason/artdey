@@ -27,26 +27,30 @@ const HomeBannerMore = () => {
             </div>
           </div>
           {/* card contents */}
-          <div className={`${BannerGridChild2} bg-gradientBaseAccent`}>
-            <div className={`${flexCentered} mt-40`}>
-              <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3`}>
-                <p className={`${paragraphCustom} text-2xl text-gray-300`}>
+          <div className={`${BannerGridChild2} bg-gradientBaseAccent relative`}>
+            <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
+              <div className={`${flexCol} ${flexStart} max-w-[90%] space-y-3`}>
+                <p
+                  className={`${paragraphCustom} text-xl  md:text-2xl tracking-wider  text-gray-300 `}
+                >
                   Africa has always been a part of global art history, with
                   artworks discovered on the continent more than 100,000 years
                   ago. I believe in making her contemporary art accessible for
                   everyone.
                 </p>
                 <h4
-                  className={`${paragraphCustom} text-gray-400 text-md uppercase`}
+                  className={`${paragraphCustom} text-gray-400 text-sm md:text-sm lg:text-md uppercase  w-full`}
                 >
                   CHIOMA ONYENWE - CO-FOUNDER & CURATOR
                 </h4>
 
-                <button
-                  className={`${ButtonStyle} bg-gray-200  py-2.5 px-5 text-gray-900 tracking-widest hover:bg-white ${transitions}`}
-                >
-                  Read more
-                </button>
+                <div>
+                  <button
+                    className={`${ButtonStyle} bg-gray-200  md:text-md py-2.5 px-5 text-gray-900 tracking-widest hover:bg-white ${transitions}`}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             </div>
           </div>

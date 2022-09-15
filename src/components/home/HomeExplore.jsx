@@ -30,18 +30,19 @@ const HomeExplore = () => {
               Explore our new arrivals
             </h4>
           </div>
-          <div
-            className={`${gridLayoutSection} hidden md:hidden lg:block xl:block`}
-          >
-            {ExploreData.map((item, index) => (
-              <HomeExploreCard
-                {...item}
-                key={index}
-                hover={hover}
-                setHover={setHover}
-              />
-            ))}
+          <div className={`hidden md:hidden lg:block`}>
+            <div className={`${gridLayoutSection} `}>
+              {ExploreData.map((item, index) => (
+                <HomeExploreCard
+                  {...item}
+                  key={index}
+                  hover={hover}
+                  setHover={setHover}
+                />
+              ))}
+            </div>
           </div>
+
           <div
             className={` ${flexRow} flex-nowrap gap-x-10 w-full overflow-x-auto scrollbar-none block lg:hidden`}
           >

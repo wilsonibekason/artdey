@@ -66,7 +66,9 @@ const FooterTop = () => {
           </h3>
           {/* email submittmission */}
           <div>
-            <div className={`relative  group  max-w-[35%] `}>
+            <div
+              className={`relative  group phone:max-w-[75%] tablet:max-w-[70%] desktop:max-w-[35%] Xdesktop:max-w-[35%] `}
+            >
               <span
                 className={`absolute right-2 top-4 focus-within:text-gray-700`}
               >

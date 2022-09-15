@@ -8,7 +8,9 @@ const HomeJournalCard = ({ image, title, description }) => {
     <div className="group">
       <div className={`${flexCol} space-y-4 group-hover:`}>
         <div>
-          <div className={`w-[550px] h-[300px]`}>
+          <div
+            className={` w-[300px] h-[150px]  md:w-[300px] md:h-[150px] lg:w-[550px] lg:h-[300px]`}
+          >
             <img
               src={image}
               alt=""
@@ -26,7 +28,7 @@ const HomeJournalCard = ({ image, title, description }) => {
         <div>
           <p
             className={`${paragraphCustom} text-center text-gray-500 text-lg
-        line-clamp-3
+        line-clamp-5 md:line-clamp-5 lg:line-clamp-3 w-[80%] md:w-[80%] lg:w-full tracking-wider
         `}
           >
             {description}
