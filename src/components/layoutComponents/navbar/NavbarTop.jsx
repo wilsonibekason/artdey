@@ -5,7 +5,13 @@ import { useIcon } from "../../../services/OnIconContext";
 import styles from "../../../styles/AppdeyCustomStyles";
 
 const NavbarTop = () => {
-  const { AiOutlineSearch, CgProfile, BsMinecartLoaded, openModal } = useIcon();
+  const {
+    AiOutlineSearch,
+    CgProfile,
+    BsMinecartLoaded,
+    openModal,
+    AiOutlineMenu,
+  } = useIcon();
   const { flexRowJustify, flexRow, transitions } = styles;
   return (
     <>
@@ -14,7 +20,12 @@ const NavbarTop = () => {
           <div>
             <AiOutlineSearch
               size={25}
-              className={`font-light text-gray-500 hover:scale-105 ${transitions}`}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:hidden tablet:hidden desktop:block Xdesktop:block`}
+              onClick={openModal}
+            />
+            <AiOutlineMenu
+              size={25}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block tablet:block desktop:hidden Xdesktop:hidden`}
               onClick={openModal}
             />
           </div>
@@ -24,6 +35,11 @@ const NavbarTop = () => {
             </Link>
           </div>
           <div className={`${flexRow} space-x-6`}>
+            <AiOutlineSearch
+              size={25}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block laptop:hidden desktop:hidden Xdesktop:hidden`}
+              onClick={openModal}
+            />
             <Link to={"/login"}>
               <CgProfile
                 size={25}

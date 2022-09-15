@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -15,7 +15,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Layout } from "../../../styles/AppdeyCustomStyles";
+import { ExploreData } from "../../../utils/CarouselData";
+import HomeExploreCard from "../HomeExploreCard";
 const HomeExploreMobile = () => {
+  const [hover, setHover] = useState(null);
+  const { gridLayoutSection } = Layout;
   SwiperCore.use([Autoplay]);
 
   return (
@@ -37,7 +42,18 @@ const HomeExploreMobile = () => {
           Scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slider has changed")}
-        ></Swiper>
+        >
+          <div className={`${gridLayoutSection}`}>
+            {ExploreData.map((item, index) => (
+              <HomeExploreCard
+                {...item}
+                key={index}
+                hover={hover}
+                setHover={setHover}
+              />
+            ))}
+          </div>
+        </Swiper>
       </div>
     </>
   );

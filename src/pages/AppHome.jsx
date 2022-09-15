@@ -18,7 +18,7 @@ import MyModal from "../components/searchInput/SearchInput";
 const AppHome = () => {
   return (
     <div>
-      <div className="mx-28 bg-gradientBaseBg">
+      <div className="mx-10 md:mx-12 lg:mx-28 bg-gradientBaseBg">
         {/* <NavDropdown /> */}
         {/* <AboutContentDropdown /> */}
         <HomeHeader />

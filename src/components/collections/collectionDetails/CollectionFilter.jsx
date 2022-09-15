@@ -29,7 +29,9 @@ const CollectionFilter = () => {
               <p className={`${text} capitalize`}>best selling </p>
               <AiOutlineDown className="text-gradientBaseAccent " size={15} />
             </div>
-            <p className={`${text} capitalize`}>2 product(s)</p>
+            <p className={`${text} capitalize`}>
+              2 product<span className="lowercase">(s)</span>
+            </p>
           </div>
         </div>
       </div>

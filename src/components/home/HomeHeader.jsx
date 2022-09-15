@@ -5,7 +5,7 @@ const HomeHeader = () => {
   const { itemsCenter } = styles;
   return (
     <>
-      <div className={`px-56 py-16 w-full`}>
+      <div className={`px-8 md:px-8 lg:px-56 xl:px-56 py-16 w-full`}>
         <div>
           <h4
             className={`font-electra font-thin text-xxl  text-center text-gray-800 leading-normal`}
