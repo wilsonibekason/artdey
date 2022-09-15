@@ -28,7 +28,7 @@ const HomeBannerMore = () => {
           </div>
           {/* card contents */}
           <div
-            className={`${BannerGridChild2} bg-gradientBaseAccent relative sm:h-[300px]`}
+            className={`${BannerGridChild2} bg-gradientBaseAccent relative h-[300px]`}
           >
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
               <div className={`${flexCol} ${flexStart} max-w-[90%] space-y-3 `}>

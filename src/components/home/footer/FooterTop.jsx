@@ -20,7 +20,9 @@ const FooterTop = () => {
     <>
       <div className={`${flexCol} space-y-8`}>
         <div>
-          <div className={`${flexRowJustify}`}>
+          <div
+            className={`flex flex-col md:flex-row md:justify-between lg:justify-between md:items-center items-start`}
+          >
             <div>
               <div>
                 <ul className={`${flexCol} space-y-4`}>
@@ -46,13 +48,19 @@ const FooterTop = () => {
             </div>
             <div className={``}>
               <ul className={`${flexCol} space-y-3`}>
-                <span className={`${paragraphCustom} text-gray-800 text-lg`}>
+                <span
+                  className={`${paragraphCustom} text-gray-800 text-sm lg:text-lg`}
+                >
                   Contact Us
                 </span>
-                <li className={`${paragraphCustom} text-gray-800 text-lg`}>
+                <li
+                  className={`${paragraphCustom} text-gray-800 text-sm lg:text-lg`}
+                >
                   hello@art2cash.com
                 </li>
-                <li className={`${paragraphCustom} text-gray-800 text-lg`}>
+                <li
+                  className={`${paragraphCustom} text-gray-800 text-sm  lg:text-lg`}
+                >
                   +234 704 921 5419
                 </li>
               </ul>
@@ -61,7 +69,9 @@ const FooterTop = () => {
         </div>
         {/*  */}
         <div className={`${flexCol} space-y-6`}>
-          <h3 className={`${paragraphCustom} text-gray-900 text-xl`}>
+          <h3
+            className={`${paragraphCustom} text-gray-900 text-sm md:text-lg lg:text-xl`}
+          >
             Subscribe to our emails
           </h3>
           {/* email submittmission */}
