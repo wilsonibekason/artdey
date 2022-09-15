@@ -37,7 +37,7 @@ const Policies = () => {
                 <span
                   className={` ${transitions} border-b border-gray-600 hover:border-gray-900 hover:border-b-2 `}
                 >
-                  hello@artdey.com.
+                  hello@art2cash.com.
                 </span>
               </p>
             </div>

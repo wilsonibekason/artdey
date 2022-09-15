@@ -7,3 +7,5 @@ export { default as Aboutus } from "./Aboutus";
 export { default as Pages } from "./Pages";
 export { default as Policy } from "./Policy";
 export { default as Cart } from "./Cart";
+export { default as CollectionsView } from "./collection/CollectionsView";
+export { default as Collections } from "./collection/Collections";

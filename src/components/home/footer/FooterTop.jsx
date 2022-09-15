@@ -50,7 +50,7 @@ const FooterTop = () => {
                   Contact Us
                 </span>
                 <li className={`${paragraphCustom} text-gray-800 text-lg`}>
-                  hello@artdey.com
+                  hello@art2cash.com
                 </li>
                 <li className={`${paragraphCustom} text-gray-800 text-lg`}>
                   +234 704 921 5419

@@ -26,7 +26,7 @@ const FooterBottom = () => {
           <div className={`${flexCentered}`}>
             <div>
               <p className={`${paragraphCustom} text-[10px] text-gray-900`}>
-                © 2022, artdey Powered by Shopify
+                © 2022, art2cash Powered by Shopify
               </p>
             </div>
           </div>

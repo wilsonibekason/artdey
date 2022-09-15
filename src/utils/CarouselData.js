@@ -407,9 +407,13 @@ export const faqsData = [
   },
   {
     heading: "Contact ",
-    desc: "For any additional inquiries, including custom orders, please send an email to hello@artdey.com",
+    desc: "For any additional inquiries, including custom orders, please send an email to hello@art2cah.com",
   },
 ];
+
+export const Art2CashCollection = [{}];
+
+export const Art2CashCollectionDetail = [{}];
 //
 
 /** 

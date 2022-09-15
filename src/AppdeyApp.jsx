@@ -11,6 +11,7 @@ import {
   Aboutus,
   ArtistDetail,
   Cart,
+  CollectionsView,
   Home,
   Login,
   Pages,
@@ -18,6 +19,7 @@ import {
   Policy,
   Register,
 } from "./views";
+import Collections from "./views/collection/Collections";
 const AppdeyApp = () => {
   return (
     <>
@@ -40,6 +42,9 @@ const AppdeyApp = () => {
           <Route path="terms-of-service" element={<TermsofService />} />
           <Route path="refund-policy" element={<Policies />} />
         </Route>
+        {/* collections */}
+        <Route path="/collections" element={<Collections />} />
+        <Route path="/collections/:id" element={<CollectionsView />} />
       </Routes>
     </>
   );
