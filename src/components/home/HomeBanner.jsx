@@ -16,9 +16,11 @@ const HomeBanner = () => {
     <>
       <div>
         <div
-          className={`h-screen max-h-screen phone:my-8 tablet:my-12 desktop:my-40 Xdesktop:my-40`}
+          className={`h-full md:h-screen md:max-h-screen phone:my-8 tablet:my-12 desktop:my-40 Xdesktop:my-40`}
         >
-          <div className={`${BannerGridLayout} max-h-[40vh] h-[40vh]`}>
+          <div
+            className={`${BannerGridLayout} h-max-h-[40%] md:max-h-[40vh] h-[30%] md:h-[40vh]`}
+          >
             <div
               className={`${BannerGridChild2} bg-gradientBaseAccent ${itemsCenter}`}
             >
@@ -33,23 +35,27 @@ const HomeBanner = () => {
                 <img
                   src="https://cdn.shopify.com/s/files/1/0425/2542/5825/files/IMG_1246.jpg?v=1605274685&width=750"
                   alt=""
-                  className="max-w-full w-full h-[40vh] object-cover"
+                  className="max-w-full w-full min-h-[10%]  md:h-[40vh] object-cover"
                 />
               </div>
             </div>
           </div>
-          <div className={`${BannerGridLayout} max-h-[60vh] h-[60vh]`}>
+          <div
+            className={`${BannerGridLayout} sm:max-h-[40%] md:max-h-[60vh] h-[40%] md:h-[60vh]`}
+          >
             <div className={`${BannerGridChild2}`}>
               <div>
                 <img
                   src="https://cdn.shopify.com/s/files/1/0425/2542/5825/files/IMG_3034_e201efd7-5139-49fd-8be0-156725be5c2b.jpg?v=1632488623&width=750"
                   alt=""
-                  className="max-w-full w-full h-[60vh] object-cover"
+                  className="max-w-full w-full min-h-[25%]  md:h-[60vh] object-cover"
                 />
               </div>
             </div>
-            <div className={`${BannerGridChild}  bg-gradientBaseAccent flex`}>
-              <div className={`mt-auto mb-20`}>
+            <div
+              className={`${BannerGridChild} max-h-[60vh]  bg-gradientBaseAccent flex `}
+            >
+              <div className={`mt-auto mb-20 h-full`}>
                 <div
                   className={`${flexCol} space-y-3 my-auto h-full  items-center justify-center `}
                 >

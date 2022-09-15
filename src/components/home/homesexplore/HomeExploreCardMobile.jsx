@@ -18,7 +18,7 @@ const HomeExploreCardMobile = ({
       <div
         onMouseEnter={() => setHover(id)}
         onMouseLeave={() => setHover(null)}
-        className="max-w-[50%] max-h-[20%] md:max-h-[50%] flex-shrink-0"
+        className="max-w-[50%] sm:min-w-[30%]  max-h-[20%] md:max-h-[50%] flex-shrink-0"
       >
         <div className={`${flexCol} space-y-1 `}>
           <div className={`h-[150px] md:h-[350px] `}>
