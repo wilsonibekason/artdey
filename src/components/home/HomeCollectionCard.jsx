@@ -10,7 +10,7 @@ const HomeCollectionCard = ({ image, name }) => {
     <div className="group">
       <div className={`${flexCol} space-y-4`}>
         <div>
-          <div className={`h-[550px]`}>
+          <div className={`h-[450px] md:h-[550px]`}>
             <img
               src={image}
               alt=""

@@ -22,10 +22,12 @@ const HomeBanner = () => {
             className={`${BannerGridLayout} h-max-h-[40%] md:max-h-[40vh] h-[30%] md:h-[40vh]`}
           >
             <div
-              className={`${BannerGridChild2} bg-gradientBaseAccent ${itemsCenter}`}
+              className={`${BannerGridChild2} bg-gradientBaseAccent relative min-h-[150px] h-[40%] md:h-[40vh]`}
             >
-              <div className={`max-w-[80%]`}>
-                <h3 className={`${paragraphCustom} text-4xl text-white`}>
+              <div className={` absolute m-auto inset-0  h-[80%] w-[80%]`}>
+                <h3
+                  className={`${paragraphCustom} text-xl  md:text-4xl text-white`}
+                >
                   Connecting African artists to global collectors.
                 </h3>
               </div>

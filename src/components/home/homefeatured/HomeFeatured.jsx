@@ -13,7 +13,7 @@ const HomeFeatured = () => {
       <div className=" phone:mt-10 tablet:mt-10 laptop:mt-10 desktop:mt-40  Xdesktop:mt-40">
         <div className={`${flexCol} space-y-4 md:space-y-5 lg:space-y-12`}>
           <div className={`${flexCentered} my-4`}>
-            <h4 className={`${paragraph2} text-2xl`}>
+            <h4 className={`${paragraph2} text-center text-2xl`}>
               Expertly curated, affordably priced
             </h4>
           </div>
