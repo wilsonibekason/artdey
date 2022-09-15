@@ -4,7 +4,7 @@ const styles = {
   paragraph3: "font-electra font-normal text-gray-700 tracking-wide",
   paragraphCustom: "font-electra font-normal  tracking-wide",
   paragraphCentralised:
-    "font-electra font-thin text-xxl  text-center  leading-normal",
+    "font-electra font-thin text-lg  md:text-xxl  text-center  leading-normal",
 
   flexRowJustify: "flex flex-row justify-between items-center",
   flexRow: "flex flex-row",

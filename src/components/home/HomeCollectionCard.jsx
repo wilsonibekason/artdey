@@ -7,10 +7,10 @@ const HomeCollectionCard = ({ image, name }) => {
     styles;
   const { BsArrowRight } = useIcon();
   return (
-    <div className="group">
+    <div className="group mb-3 ">
       <div className={`${flexCol} space-y-4`}>
         <div>
-          <div className={`h-[450px] md:h-[550px]`}>
+          <div className={`h-[250px] md:h-[550px]`}>
             <img
               src={image}
               alt=""
