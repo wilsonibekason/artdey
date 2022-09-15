@@ -4,7 +4,9 @@ import CollectionContents from "./collectionContents/CollectionContents";
 const CollectionLayout = () => {
   return (
     <>
-      <CollectionContents />
+      <div className="mx-28 my-20">
+        <CollectionContents />
+      </div>
     </>
   );
 };

@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import styles, { Layout } from "../../styles/AppdeyCustomStyles";
 import { useIcon } from "../../services/OnIconContext";
 import { AdvanceNavContentData } from "../../utils/CarouselData";
+import { Link } from "react-router-dom";
 
 const NavDropdown = () => {
   const { paragraphCustom, transitions } = styles;
@@ -45,7 +46,8 @@ const NavDropdown = () => {
                         {AdvanceNavContentData.map((item, index) => (
                           <>
                             <p>
-                              <span
+                              <Link
+                                to={item.link}
                                 key={item.id}
                                 className={`${paragraphCustom} text-md tracking-tight  text-gray-500 ${
                                   hover === item.id ? "underline" : ""
@@ -54,7 +56,7 @@ const NavDropdown = () => {
                                 onMouseLeave={() => setHover(null)}
                               >
                                 {item.title}
-                              </span>
+                              </Link>
 
                               <ul className={" mt-4"}>
                                 {[...item.collections]

@@ -216,7 +216,7 @@ export const SelectOptionData = [
 export const AdvanceNavContentData = [
   {
     title: "Artist",
-    link: "",
+    link: "/collections",
     id: uuid(),
     collections: [
       {
@@ -411,7 +411,128 @@ export const faqsData = [
   },
 ];
 
-export const Art2CashCollection = [{}];
+export const Art2CashCollection = [
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsAppImage2022-08-29at12.37.34PM.jpg?v=1661950340&width=330",
+    tag: "1000$ and more",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_7761.jpg?v=1612868145&width=330",
+    tag: "Abiola daniel",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8283__1.jpg?v=1661778262&width=330",
+    tag: "Abstracts",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-07-27_at_11.39.37_AM.png?v=1659524167&width=330",
+    tag: "Achike Anayo",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/woman_and_flower.jpg?v=1652375340",
+    tag: "Ademola abioloka",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/PHOTO-2021-10-07-10-56-06.jpg?v=1633600923&width=330",
+    tag: "Alkan david",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsAppImage2022-08-24at1.55.33PM.jpg?v=1661346404&width=330",
+    tag: "animals",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-07-16_at_2.51.31_PM.png?v=1626443717&width=330",
+    tag: "ariph joseph water",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_8026.jpg?v=1661600017&width=330",
+    tag: "edem",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/WhatsAppImage2021-03-18at11.55.29.jpg?v=1619705262&width=330",
+    tag: "architecture and cities",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG-20220222-WA0000.jpg?v=1645535586&width=330",
+    tag: "babalowa olumbe",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/benjamin.jpg?v=1659523886&width=330",
+    tag: "benjamin omeke",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Screenshot_2021-03-01_at_7.34.10_PM.png?v=1614623688&width=330",
+    tag: "batha onyekachi",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/bright.jpg?v=1659529809&width=330",
+    tag: "bright osadolor",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/5e3353f2-a58a-4c47-84e0-75784ee095bb.jpg?v=1612440936&width=330",
+    tag: "charles osaro",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_6864.HEIC.jpg?v=1598537228&width=330",
+    tag: "Christie 'Jibs' Akinsanya",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_8087.jpg?v=1659975038&width=330",
+    tag: "chukwuemeka image ",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/Faces01.jpg?v=1649601771&width=330",
+    tag: "daniel",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/ac27a8e6-7da6-4678-883e-08107537222a.jpg?v=1659535571",
+    tag: "daniel osahana",
+    id: uuid(),
+  },
+  {
+    activeImage:
+      "https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_7912.jpg?v=1661244261&width=330",
+    tag: "ebenzar",
+    id: uuid(),
+  },
+];
 
 export const Art2CashCollectionDetail = [{}];
 //
@@ -441,4 +562,31 @@ export const Art2CashCollectionDetail = [{}];
                       Got it, thanks!
                     </button>
                   </div>
+                   <div className={`h-[300px] relative`}>
+     
+            <img
+            src={activeImage}
+            alt=""
+            className={`object-cover max-w-full w-full h-full ${
+              hover === id && "block absolute z-[1] "
+            } `}
+            width={800}
+            height={552}
+          />
+     
+          <img
+            src={hiddenImage}
+            alt=""
+            className={` ${
+              hover === id &&
+              "transition ease-in duration-700 delay-900" &&
+              "backdrop-blur-md "
+            }  ${
+              hover !== id && "hidden"
+            }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90 `}
+            width={800}
+            height={552}
+          />
+       
+        </div>
  */

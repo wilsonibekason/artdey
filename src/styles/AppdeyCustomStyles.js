@@ -33,6 +33,7 @@ const styles = {
     "absolute  left-2   font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
 
   borderStructure: "border border-solid",
+  imagesStyles: "object-cover max-w-full w-full h-full",
 };
 
 export const uniqueStyleComponents = {
