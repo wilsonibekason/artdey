@@ -18,10 +18,10 @@ const HomeExploreCardMobile = ({
       <div
         onMouseEnter={() => setHover(id)}
         onMouseLeave={() => setHover(null)}
-        className="max-w-[50%]  max-h-[50%] flex-shrink-0"
+        className="max-w-[50%] max-h-[20%] md:max-h-[50%] flex-shrink-0"
       >
         <div className={`${flexCol} space-y-1 `}>
-          <div className={`h-[350px] `}>
+          <div className={`h-[150px] md:h-[350px] `}>
             <img
               src={activeImage}
               alt=""
@@ -34,17 +34,19 @@ const HomeExploreCardMobile = ({
           <div className={``}>
             <div className={`${flexCol} space-y-2`}>
               <div className={`${flexCentered}`}>
-                <h4 className={`${paragraph2}  text-md `}>{tag}</h4>
+                <h4 className={`${paragraph2} text-xss md:text-md `}>{tag}</h4>
               </div>
               <div className="pr-3">
                 <p
-                  className={`${paragraph3} text-md tracking-widest uppercase text-center`}
+                  className={`${paragraph3} text-sm md:text-md tracking-widest uppercase text-center`}
                 >
                   {author}
                 </p>
               </div>
               <div className={`${flexCentered}`}>
-                <h3 className={`${paragraph3} text-lg`}>{`$${price} USD`}</h3>
+                <h3
+                  className={`${paragraph3} text-sm  md:text-lg`}
+                >{`$${price} USD`}</h3>
               </div>
             </div>
           </div>

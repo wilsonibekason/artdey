@@ -23,9 +23,7 @@ const HomeExplore = () => {
         <div
           className={`${flexCol} phone:space-y-4 tablet:space-y-3 laptop:space-y-4 desktop:space-y-12 Xdesktop:space-y-12`}
         >
-          <div
-            className={`${flexCentered} phone:my-4 tablet:my-5 laptop:my-6 desktop:my-12 Xdesktop:my-12 `}
-          >
+          <div className={`${flexCentered} my-8 md:my-8 lg:my-12 `}>
             <h4 className={`${paragraph2} text-2xl`}>
               Explore our new arrivals
             </h4>
@@ -57,7 +55,7 @@ const HomeExplore = () => {
           </div>
           <div className={`${flexCentered} `}>
             <button
-              className={`py-3 px-8 font-electra text-lg text-white font-light bg-gradientBaseAccent rounded-full hover:scale-105`}
+              className={`py-2 px-6 md:py-3 md:px-8 font-electra text-lg text-white font-light bg-gradientBaseAccent rounded-full hover:scale-105`}
             >
               view all
             </button>
