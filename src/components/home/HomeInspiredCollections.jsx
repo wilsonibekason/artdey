@@ -16,7 +16,7 @@ const HomeInspiredCollections = () => {
   const { BsArrowRight } = useIcon();
   return (
     <>
-      <div className=" my-10 md:my-20 mx-10 md:mx-28 pt-8 md:pt-20">
+      <div className=" my-10 md:my-20 mx-4 md:mx-12 lg:mx-28  pt-8 md:pt-20">
         <div className={`${flexCol} space-y-6`}>
           <div className={`${flexCol} space-y-4 ${flexCentered}`}>
             <div>

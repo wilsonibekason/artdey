@@ -1,6 +1,7 @@
 const styles = {
   paragraph: "font-electra font-normal text-md text-gray-500 tracking-wide",
-  paragraph2: "font-electra font-normal text-gray-500 tracking-wide",
+  paragraph2:
+    "font-electra font-normal text-gradientBaseAccent  md:text-gray-500 tracking-wide",
   paragraph3: "font-electra font-normal text-gray-700 tracking-wide",
   paragraphCustom: "font-electra font-normal  tracking-wide",
   paragraphCentralised:

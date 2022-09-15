@@ -10,7 +10,7 @@ const HomeCollectionCard = ({ image, name }) => {
     <div className="group mb-3 ">
       <div className={`${flexCol} space-y-4`}>
         <div>
-          <div className={`h-[250px] md:h-[550px]`}>
+          <div className={`h-[300px] md:h-[550px]`}>
             <img
               src={image}
               alt=""
@@ -23,7 +23,9 @@ const HomeCollectionCard = ({ image, name }) => {
         <div>
           <div className={`${flexCentered}`}>
             <div className={`${flexRow} items-center space-x-2`}>
-              <h5 className={`${paragraphCustom} text-white text-xl`}>
+              <h5
+                className={`${paragraphCustom} text-white text-lg md:text-xl`}
+              >
                 {name}
               </h5>
               <BsArrowRight className="text-white text-lg group-hover:text-xl" />

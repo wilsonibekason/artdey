@@ -33,7 +33,9 @@ const HomeFeatureCardMobile = ({
           <div className={`mt-2 md:mt-0`}>
             <div className={`${flexCol} space-y-1 md:space-y-2`}>
               <div className={`${flexCentered}`}>
-                <h4 className={`${paragraph2} text-xss  md:text-md `}>{tag}</h4>
+                <h4 className={`${paragraph2} text-xss   md:text-md `}>
+                  {tag}
+                </h4>
               </div>
               <div className="pr-3">
                 <p
@@ -44,7 +46,7 @@ const HomeFeatureCardMobile = ({
               </div>
               <div className={`${flexCentered}`}>
                 <h3
-                  className={`${paragraph3} text-sm md:text-lg`}
+                  className={`${paragraph3} text-md md:text-lg`}
                 >{`$${price} USD`}</h3>
               </div>
             </div>

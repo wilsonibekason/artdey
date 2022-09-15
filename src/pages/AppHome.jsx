@@ -27,7 +27,7 @@ const AppHome = () => {
         <HomeBanner />
         <HomeFeatured />
       </div>
-      <div className="bg-gradientBaseAccent ">
+      <div className=" bg-gradientBaseAccent ">
         <HomeInspiredCollections />
         <div className="bg-gradientBaseBg2">
           <div className="mx-4 md:mx-12 lg:mx-28">
