@@ -31,8 +31,8 @@ const HomeExploreCardMobile = ({
             />
           </div>
           {/*  */}
-          <div className={``}>
-            <div className={`${flexCol} space-y-2`}>
+          <div className={`mt-2 md:mt-0`}>
+            <div className={`${flexCol} space-y-1 md:space-y-2`}>
               <div className={`${flexCentered}`}>
                 <h4 className={`${paragraph2} text-xss md:text-md `}>{tag}</h4>
               </div>

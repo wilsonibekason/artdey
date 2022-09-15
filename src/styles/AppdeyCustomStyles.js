@@ -44,8 +44,8 @@ export const uniqueStyleComponents = {
 export const Layout = {
   gridLayoutSection: "grid grid-cols-3 gap-8",
   BannerGridLayout: "grid grid-cols-12 gap-0 ",
-  BannerGridChild: "col-span-4",
-  BannerGridChild2: " col-span-8",
+  BannerGridChild: "col-span-12 md:col-span-4",
+  BannerGridChild2: "col-span-12 md:col-span-8",
   BannerGridChild3:
     "col-span-6 tablet:col-span-3 desktop:col-span-4 Xdesktop:col-span-4",
   BannerGridChild4:
