@@ -20,7 +20,7 @@ const NavbarTop = () => {
           <div>
             <AiOutlineSearch
               size={25}
-              className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:hidden tablet:hidden desktop:block Xdesktop:block`}
+              className={`font-light text-gray-500 hover:scale-105 ${transitions} hidden md:hidden lg:block`}
               onClick={openModal}
             />
             <AiOutlineMenu

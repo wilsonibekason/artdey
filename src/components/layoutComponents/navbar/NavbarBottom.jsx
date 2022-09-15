@@ -6,9 +6,7 @@ const NavbarBottom = () => {
   const { MdOutlineKeyboardArrowDown, openNav, showAboutModal } = useIcon();
   const { itemsCenter, flexRow, paragraph, transitions } = styles;
   return (
-    <div
-      className={`${itemsCenter} py-2 phone:hidden tablet:hidden laptop:block desktop:block Xdesktop:block`}
-    >
+    <div className={`${itemsCenter} py-2 hidden md:hidden  lg:block `}>
       <div className={`${flexRow} space-x-4`}>
         <div className={`${flexRow} space-x-2 items-center`}>
           <p
