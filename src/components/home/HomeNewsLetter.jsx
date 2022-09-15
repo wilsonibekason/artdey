@@ -17,7 +17,7 @@ const HomeNewsLetter = () => {
         <div className={`${flexCol} space-y-5`}>
           <div className={`${flexCentered}`}>
             <h4
-              className={`${paragraphCustom} text-5xl text-gradientBaseAccent`}
+              className={`${paragraphCustom} text-lg md:text-5xl text-gradientBaseAccent`}
             >
               Be the first to know
             </h4>
@@ -25,7 +25,7 @@ const HomeNewsLetter = () => {
 
           <div className={`max-w-full ${flexCentered}`}>
             <p
-              className={`${paragraphCustom} text-gray-500 text-lg  lg:text-xl`}
+              className={`${paragraphCustom} text-gray-500 text-sm md:text-lg  lg:text-xl`}
             >
               Join our email list to learn about exclusive showings and new
               collections.

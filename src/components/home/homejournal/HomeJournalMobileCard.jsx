@@ -1,16 +1,14 @@
 import React from "react";
 import styles from "../../../styles/AppdeyCustomStyles";
 
-const HomeJournalCard = ({ image, title, description }) => {
+const HomeJournalMobileCard = ({ image, title, description }) => {
   const { flexCol, transitions, paragraphCustom, flexCentered } = styles;
 
   return (
-    <div className="group">
+    <div className="group max-w-full flex-shrink-0">
       <div className={`${flexCol} space-y-4 group-hover:`}>
         <div>
-          <div
-            className={` w-[300px] h-[150px]  md:w-[300px] md:h-[150px] lg:w-[550px] lg:h-[300px]`}
-          >
+          <div className={`h-[300px]`}>
             <img
               src={image}
               alt=""
@@ -28,8 +26,8 @@ const HomeJournalCard = ({ image, title, description }) => {
         <div>
           <p
             className={`${paragraphCustom} text-center text-gray-500 text-lg
-        line-clamp-5 md:line-clamp-5 lg:line-clamp-3 w-[80%] md:w-[80%] lg:w-full tracking-wider
-        `}
+          line-clamp-5 md:line-clamp-5 lg:line-clamp-3 w-[90%] tracking-wider
+          `}
           >
             {description}
           </p>
@@ -39,4 +37,4 @@ const HomeJournalCard = ({ image, title, description }) => {
   );
 };
 
-export default HomeJournalCard;
+export default HomeJournalMobileCard;
