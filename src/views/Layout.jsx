@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <BannerTop />
       <div className={`bg-gradientBaseBg`}>
-        <div className={`mx-10 md:mx-12 lg:mx-28`}>
+        <div className={`mx-2 md:mx-12 lg:mx-28`}>
           <Navbar />
         </div>
         <NavDropdown />

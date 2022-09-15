@@ -43,7 +43,7 @@ const NavbarTop = () => {
             <Link to={"/login"}>
               <CgProfile
                 size={25}
-                className={`font-light text-gray-500  hover:scale-105 ${transitions}`}
+                className={`hidden md:block font-light text-gray-500  hover:scale-105 ${transitions}`}
               />
             </Link>
             <Link to="/cart">

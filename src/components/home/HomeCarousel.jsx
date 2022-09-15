@@ -43,7 +43,7 @@ const HomeCarousel = () => {
             return (
               <SwiperSlide>
                 <div
-                  className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-12vh)] "
+                  className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-[30vh] md:min-h-[calc(100vh-12vh)] "
                   key={index}
                 >
                   <div
