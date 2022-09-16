@@ -50,9 +50,9 @@ const FooterTop = () => {
                 </ul>
               </div>
             </div>
-            <div>
-              <img src={art2cashBg} alt="" className="w-40" />
-            </div>
+            <Link to={`/`} className={`${flexCentered}`}>
+              <img src={art2cashBg} alt="" className="w-40 cursor-pointer" />
+            </Link>
             <div className={``}>
               <ul className={`${flexCol} space-y-3`}>
                 <span

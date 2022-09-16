@@ -96,6 +96,3 @@ export const responsiveStyle = {
     "flex items-center justify-center md:items-start md:justify-start",
 };
 export default styles;
-
-//shop collection routes
-//artday artcash
