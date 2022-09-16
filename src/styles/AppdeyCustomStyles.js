@@ -33,7 +33,7 @@ const styles = {
   inputStylesCustom:
     "peer border border-solid border-gray-300 outline-none bg-transparent py-3 px-2 rounded  placeholder:font-light placeholder:font-raleway placeholder:text-gray-700 focus:border-gray-700 focus:border-2 text-gray-800 font-raleway font-normal shadow placeholder:invisible",
   labelStyleCustom2:
-    "absolute mt-1 left-2 text-gray-800 text-sm  font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
+    "absolute mt-1 left-2 text-gray-800 text-sm  font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:top-0 peer-focus:text-gray-600 peer-focus:text-sm",
   labelStyleCustom3:
     "absolute  left-2   font-electra tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-700 peer-placeholder-shown:top-2 peer-focus:-top-0 peer-focus:text-gray-600 peer-focus:text-sm",
   inputStylesCustom4:
@@ -73,6 +73,6 @@ export const Layout = {
   contactGridChild2: "col-span-6",
   contactGridChild3: "col-span-12",
   ArtistCollectionLayout:
-    "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8 lg:gap-8",
+    "grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-8",
 };
 export default styles;

@@ -12,6 +12,7 @@ const AppLogin = () => {
     labelStyleCustom,
     paragraphCustom,
     transitions,
+    inputStyles2,
   } = styles;
   const { BsArrowRight } = useIcon();
   return (
@@ -26,9 +27,9 @@ const AppLogin = () => {
                 login
               </h4>
             </div>
-            <div className={`${flexCol} space-y-6`}>
+            <div className={`${flexCol} space-y-6 `}>
               <div>
-                <div>
+                <div className="mx-10 md:mx-0">
                   <div className={`relative  group  max-w-full `}>
                     <span
                       className={`absolute right-2 top-4 focus-within:text-gray-700`}
@@ -40,7 +41,7 @@ const AppLogin = () => {
                       placeholder="Email"
                       autoComplete="email"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2} w-full md:w-[26rem]`}
                     />
                     <label htmlFor="email" className={`${labelStyleCustom}`}>
                       Email
@@ -49,7 +50,7 @@ const AppLogin = () => {
                 </div>
               </div>
               <div>
-                <div>
+                <div className={`mx-10 md:mx-0`}>
                   <div className={`relative  group  max-w-full `}>
                     <span
                       className={`absolute right-2 top-4 focus-within:text-gray-700`}
@@ -61,7 +62,7 @@ const AppLogin = () => {
                       placeholder="password"
                       autoComplete="password"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2}  w-full md:w-[26rem] `}
                     />
                     <label htmlFor="password" className={`${labelStyleCustom}`}>
                       Password

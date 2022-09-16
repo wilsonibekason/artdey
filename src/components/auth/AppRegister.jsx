@@ -7,7 +7,7 @@ const AppRegister = () => {
   const {
     flexCol,
     flexCentered,
-    inputStyles,
+    inputStyles2,
     ButtonStyle,
     labelStyleCustom,
     paragraphCustom,
@@ -42,7 +42,7 @@ const AppRegister = () => {
                       placeholder="firstname"
                       autoComplete="firstname"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2}  w-full md:w-[26rem]`}
                     />
                     <label
                       htmlFor="firstname"
@@ -66,7 +66,7 @@ const AppRegister = () => {
                       placeholder="lastname"
                       autoComplete="lastname"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2}  w-full md:w-[26rem]`}
                     />
                     <label htmlFor="lastname" className={`${labelStyleCustom}`}>
                       Last name
@@ -88,7 +88,7 @@ const AppRegister = () => {
                       placeholder="Email"
                       autoComplete="email"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2}  w-full md:w-[26rem]`}
                     />
                     <label htmlFor="email" className={`${labelStyleCustom}`}>
                       Email
@@ -109,7 +109,7 @@ const AppRegister = () => {
                       placeholder="password"
                       autoComplete="password"
                       required
-                      className={`${inputStyles}`}
+                      className={`${inputStyles2}  w-full md:w-[26rem]`}
                     />
                     <label htmlFor="password" className={`${labelStyleCustom}`}>
                       Password

@@ -10,7 +10,7 @@ const CollectionFilter = () => {
   const { AiOutlineDown } = useIcon();
   return (
     <>
-      <div className="my-8">
+      <div className="my-8 hidden md:block">
         <div className={`${flexRowJustify}`}>
           <div className={`${flexRow} space-x-6`}>
             <p className={`${text} capitalize`}>filter:</p>

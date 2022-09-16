@@ -9,7 +9,7 @@ import { CgProfile } from "react-icons/cg";
 import { BsMinecartLoaded, BsArrowRight } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown, MdOutlineCancel } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
-import { FiDownload } from "react-icons/fi";
+import { FiDownload, FiFilter } from "react-icons/fi";
 const IconContext = createContext({});
 
 export const IconProvider = ({ children }) => {
@@ -67,6 +67,7 @@ export const IconProvider = ({ children }) => {
         MdDelete,
         AiOutlineDown,
         AiOutlineMenu,
+        FiFilter,
         /// end of icons export
         isOpen,
         setIsOpen,

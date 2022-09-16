@@ -3,3 +3,7 @@ export { default as AppPageNotFound } from "./AppPageNotFound";
 export { default as AppAboutus } from "./AppAboutus";
 export { default as AppCart } from "./AppCart";
 export { default as AppCollectionContents } from "./AppCollectionContents";
+export { default as AppAbout } from "./information/AppAbout";
+export { default as AppFaq } from "./information/AppFaq";
+export { default as AppPolicy } from "./information/AppPolicy";
+export { default as AppTerms } from "./information/AppTerms";

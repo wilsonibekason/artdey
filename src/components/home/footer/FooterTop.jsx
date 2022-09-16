@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { artdey_logo } from "../../../assets";
 import { useIcon } from "../../../services/OnIconContext";
@@ -17,6 +18,7 @@ const FooterTop = () => {
     flexCentered,
   } = styles;
   const { BsArrowRight } = useIcon();
+  const navigate = useNavigate();
   return (
     <>
       <div className={`${flexCol} space-y-8`}>
@@ -30,14 +32,17 @@ const FooterTop = () => {
                   {FooterTopData.map((item, index) =>
                     item.members.map((item, i) => (
                       <li key={i} className={`flex justify-start items-start`}>
-                        <Link
-                          to={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <span
+                          // to={item.link}
+                          // target="_blank"
+                          // rel="noopener noreferrer"
                           className={`${paragraphCustom} text-gray-800 tracking-wider ${transitions} hover:underline`}
+                          onClick={() =>
+                            navigate(`${item.link}`, { replace: true })
+                          }
                         >
                           {item.name}
-                        </Link>
+                        </span>
                       </li>
                     ))
                   )}

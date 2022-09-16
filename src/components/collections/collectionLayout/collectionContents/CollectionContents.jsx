@@ -12,10 +12,12 @@ const CollectionContents = () => {
   const { gridMoreLayoutSection } = Layout;
   return (
     <>
-      <div className="mt-8 md:mt-10 lg:mt-40">
-        <div className={`${flexCol} space-y-6`}>
+      <div className="mt-0 md:mt-10 lg:mt-40">
+        <div className={`${flexCol} space-y-3 md:space-y-6`}>
           <div className={`${flexStart} my-4`}>
-            <h4 className={`${paragraph2} text-xxl tracking-widest`}>
+            <h4
+              className={`${paragraph2} text-xl  md:text-xxl tracking-widest`}
+            >
               Collections
             </h4>
           </div>

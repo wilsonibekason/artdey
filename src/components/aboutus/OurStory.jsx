@@ -5,15 +5,15 @@ const OurStory = () => {
   const { flexCentered, flexCol, paragraphCustom } = styles;
   return (
     <>
-      <div className={`${flexCentered} mx-40`}>
-        <div className={`${flexCol} space-y-12`}>
+      <div className={`${flexCentered} mx-4 md:mx-12  lg:mx-40`}>
+        <div className={`${flexCol} space-y-4 md:space-y-12`}>
           <h1 className={`${paragraphCustom} text-6xl text-gradientBaseAccent`}>
             Our Story
           </h1>
           {/* description */}
           <div className={``}>
             <p
-              className={`${paragraphCustom} leading-9 tracking-wider text-md text-gradientBaseAccent `}
+              className={`${paragraphCustom} leading-5 md:leading-9 tracking-wider text-sm md:text-md text-gradientBaseAccent `}
             >
               art2cash is an online art marketplace dedicated to demystifying
               the contemporary art market for emerging artists and collectors.

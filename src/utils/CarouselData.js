@@ -173,7 +173,7 @@ export const FooterTopData = [
       {
         name: "FAQS",
         id: uuid(),
-        link: "faqs",
+        link: "pages/faqs",
       },
       {
         name: "Terms Of Service",

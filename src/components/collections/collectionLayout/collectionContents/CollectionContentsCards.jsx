@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useIcon } from "../../../../services/OnIconContext";
 import styles from "../../../../styles/AppdeyCustomStyles";
 
@@ -15,11 +16,13 @@ const CollectionContentsCards = ({
   const { flexCol, flexCentered, paragraphCustom, flexRow, transitions } =
     styles;
   const { BsArrowRight } = useIcon();
+  const navigate = useNavigate();
   return (
     <>
       <div
         onMouseEnter={() => setHover(id)}
         onMouseLeave={() => setHover(null)}
+        onClick={() => navigate(`/collection/${id} `, { replace: true })}
       >
         <div className={`${flexCol} space-y-3`}>
           {/* image section */}

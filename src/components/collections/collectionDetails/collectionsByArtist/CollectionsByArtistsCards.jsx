@@ -21,7 +21,7 @@ const CollectionsByArtistsCards = ({
       >
         <div className={`${flexCol} space-y-3`}>
           {/* image section */}
-          <div className={`h-[450px] relative`}>
+          <div className={` h-[150px] md:h-[450px] relative`}>
             {/* {!hover === id ? ( */}
             <img
               src={activeImage}
@@ -42,7 +42,7 @@ const CollectionsByArtistsCards = ({
                 "backdrop-blur-md "
               }  ${
                 hover !== id && "hidden"
-              }  object-cover w-full  h-[450px] absolute z-[3] backdrop-opacity-90 `}
+              }  object-cover w-full h-[150px]  md:h-[450px] absolute z-[3] backdrop-opacity-90 `}
               width={800}
               height={552}
             />
@@ -50,10 +50,10 @@ const CollectionsByArtistsCards = ({
           </div>
           {/* content section */}
           <div className={``}>
-            <div className={`${flexCol} space-y-2`}>
+            <div className={`${flexCol} space-y-px md:space-y-2`}>
               <div className={`${flexCentered}`}>
                 <h4
-                  className={`${paragraph2}  text-md  ${
+                  className={`${paragraph2}  text-sm md:text-md  ${
                     hover === id && "underline"
                   }`}
                 >
@@ -66,7 +66,9 @@ const CollectionsByArtistsCards = ({
                 </p>
               </div> */}
               <div className={`${flexCentered}`}>
-                <h3 className={`${paragraph3} text-lg`}>{`$${price} USD`}</h3>
+                <h3
+                  className={`${paragraph3} text-md md:text-lg`}
+                >{`$${price} USD`}</h3>
               </div>
             </div>
           </div>

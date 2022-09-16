@@ -9,7 +9,7 @@ const CollectionByArtist = () => {
   const { gridLayoutSection, ArtistCollectionLayout } = Layout;
   return (
     <>
-      <div className="">
+      <div className="my-4">
         <div className={`${flexCol} space-y-6`}>
           {/* <div className={`${flexStart} my-4`}>
             <h4 className={`${paragraph2} text-xxl tracking-widest`}>

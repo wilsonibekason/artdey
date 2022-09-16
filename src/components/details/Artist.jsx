@@ -34,7 +34,7 @@ const Artist = () => {
           </div>
           {/* card contents */}
           <div
-            className={`${BannerGridChild4} bg-gradientBaseAccent relative h-[800px] `}
+            className={`${BannerGridChild4} bg-gradientBaseAccent relative h-[800px] md:h-auto`}
           >
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
               <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3 `}>
