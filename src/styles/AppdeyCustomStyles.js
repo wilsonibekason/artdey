@@ -43,7 +43,7 @@ const styles = {
 };
 
 export const uniqueStyleComponents = {
-  paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-md md:text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent`,
+  paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-md md:text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent cursor-pointer `,
   text: "text-electra text-gradientBaseAccent text-ellipsis text-md font-normal ",
 };
 
@@ -92,5 +92,10 @@ export const defaultResponsiveStyle = {
 export const responsiveStyle = {
   flexRowColumn: "flex flex-row md:flex-col ",
   flexColRow: "flex flex-col md:flex-row",
+  flexCenteredStart:
+    "flex items-center justify-center md:items-start md:justify-start",
 };
 export default styles;
+
+//shop collection routes
+//artday artcash

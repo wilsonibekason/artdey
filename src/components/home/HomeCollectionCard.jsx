@@ -7,7 +7,7 @@ const HomeCollectionCard = ({ image, name }) => {
     styles;
   const { BsArrowRight } = useIcon();
   return (
-    <div className="group mb-3 ">
+    <div className="group mb-3 cursor-pointer ">
       <div className={`${flexCol} space-y-4`}>
         <div>
           <div className={`h-[300px] md:h-[550px]`}>

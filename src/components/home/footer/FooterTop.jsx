@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { artdey_logo } from "../../../assets";
+import { artdey_logo, art2cashBg } from "../../../assets";
 import { useIcon } from "../../../services/OnIconContext";
-import styles from "../../../styles/AppdeyCustomStyles";
+import styles, { responsiveStyle } from "../../../styles/AppdeyCustomStyles";
 import { FooterTopData } from "../../../utils/CarouselData";
 
 const FooterTop = () => {
@@ -17,6 +17,7 @@ const FooterTop = () => {
     labelStyleCustom2,
     flexCentered,
   } = styles;
+  const { flexCenteredStart } = responsiveStyle;
   const { BsArrowRight } = useIcon();
   const navigate = useNavigate();
   return (
@@ -36,7 +37,7 @@ const FooterTop = () => {
                           // to={item.link}
                           // target="_blank"
                           // rel="noopener noreferrer"
-                          className={`${paragraphCustom} text-gray-800 tracking-wider ${transitions} hover:underline`}
+                          className={`${paragraphCustom} text-gray-800 cursor-pointer tracking-wider ${transitions} hover:underline`}
                           onClick={() =>
                             navigate(`${item.link}`, { replace: true })
                           }
@@ -50,7 +51,7 @@ const FooterTop = () => {
               </div>
             </div>
             <div>
-              <img src={artdey_logo} alt="" className="w-56" />
+              <img src={art2cashBg} alt="" className="w-40" />
             </div>
             <div className={``}>
               <ul className={`${flexCol} space-y-3`}>
@@ -76,12 +77,12 @@ const FooterTop = () => {
         {/*  */}
         <div className={`${flexCol} space-y-6`}>
           <h3
-            className={`${paragraphCustom} text-gray-900 text-sm md:text-lg lg:text-xl text-center md:text-end`}
+            className={`${paragraphCustom} text-gray-900 text-sm md:text-lg lg:text-xl text-center md:text-end lg:text-start`}
           >
             Subscribe to our emails
           </h3>
           {/* email submittmission */}
-          <div className={`${flexCentered}`}>
+          <div className={`${flexCenteredStart}`}>
             <div
               className={`relative  group phone:max-w-[75%] tablet:max-w-[70%] desktop:max-w-[35%] Xdesktop:max-w-[35%] `}
             >
@@ -95,7 +96,7 @@ const FooterTop = () => {
                 placeholder="Email"
                 autoComplete="email"
                 required
-                className={`${inputStyles2} `}
+                className={`${inputStyles2} w-full md:w-[26rem]`}
               />
               <label htmlFor="email" className={`${labelStyleCustom2}`}>
                 Email

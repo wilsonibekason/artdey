@@ -61,7 +61,7 @@ const ArtDetailinfo = () => {
         {/* more payment options */}
         <div>
           <p
-            className={`${paragraphCustom} text-gray-600 hover:underline ${transitions} text-center text-lg`}
+            className={`${paragraphCustom} text-gray-600 hover:underline cursor-pointer  ${transitions} text-center text-lg`}
           >
             More payment options
           </p>
@@ -81,7 +81,9 @@ const ArtDetailMore = () => {
         <div className={`${flexCol} space-y-5`}>
           <div className={`${flexRow} items-center space-x-2`}>
             <FiDownload />
-            <p className={`${paragraphCustom} text-lg text-gradientBaseAccent`}>
+            <p
+              className={`${paragraphCustom} text-lg text-gradientBaseAccent cursor-pointer `}
+            >
               Share{" "}
             </p>
           </div>

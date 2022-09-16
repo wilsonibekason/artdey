@@ -72,7 +72,7 @@ const AppLogin = () => {
               </div>
               <div>
                 <p
-                  className={`${paragraphCustom} underline text-gray-500 hover:text-gray-900 ${transitions}`}
+                  className={`${paragraphCustom} underline text-gray-500 hover:text-gray-900 cursor-pointer  ${transitions}`}
                 >
                   {" "}
                   Forgot your password

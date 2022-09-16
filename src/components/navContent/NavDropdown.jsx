@@ -4,13 +4,14 @@ import { Fragment } from "react";
 import styles, { Layout } from "../../styles/AppdeyCustomStyles";
 import { useIcon } from "../../services/OnIconContext";
 import { AdvanceNavContentData } from "../../utils/CarouselData";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavDropdown = () => {
   const { paragraphCustom, transitions } = styles;
   const { AdvanceNavLayout } = Layout;
   const { showNavContent, hideNav } = useIcon();
   const [hover, setHover] = useState(null);
+  const navigate = useNavigate();
   return (
     <>
       <div>
@@ -47,9 +48,9 @@ const NavDropdown = () => {
                           <>
                             <p>
                               <Link
-                                to={item.link}
+                                to={`collections`}
                                 key={item.id}
-                                className={`${paragraphCustom} text-md tracking-tight  text-gray-500 ${
+                                className={`${paragraphCustom} text-md tracking-tight  text-gray-500 cursor-pointer ${
                                   hover === item.id ? "underline" : ""
                                 } ${transitions}`}
                                 onMouseEnter={() => setHover(item.id)}
@@ -63,8 +64,13 @@ const NavDropdown = () => {
                                   .sort((a, b) => a.name.localeCompare(b.name))
                                   .map((list, index) => (
                                     <li
+                                      onClick={() =>
+                                        navigate(`collection/${list.id}`, {
+                                          replace: true,
+                                        })
+                                      }
                                       key={list.id}
-                                      className={`${paragraphCustom} text-md tracking-tight text-gray-500 leading-8 ${
+                                      className={`${paragraphCustom} text-md tracking-tight text-gray-500 cursor-pointer leading-8 ${
                                         hover === list.id ? "underline" : ""
                                       } ${transitions}`}
                                       onMouseEnter={() => setHover(list.id)}

@@ -5,7 +5,7 @@ const HomeJournalCard = ({ image, title, description }) => {
   const { flexCol, transitions, paragraphCustom, flexCentered } = styles;
 
   return (
-    <div className="group">
+    <div className="group cursor-pointer ">
       <div className={`${flexCol} space-y-4 group-hover:`}>
         <div>
           <div

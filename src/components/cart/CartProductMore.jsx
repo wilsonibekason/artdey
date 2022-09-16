@@ -22,7 +22,7 @@ const CartProductMoreCard = ({
         onMouseLeave={() => setHover(null)}
         onClick={() => navigate(`/art/${id}`, { replace: true })}
       >
-        <div className={`${flexCol} space-y-3`}>
+        <div className={`${flexCol} space-y-3 cursor-pointer `}>
           {/* image section */}
           <div className={`h-[150px] md:h-[300px] relative`}>
             {/* {!hover === id ? ( */}

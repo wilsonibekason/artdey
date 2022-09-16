@@ -36,7 +36,7 @@ const CartEmpty = () => {
           >
             <Link
               to="/login"
-              className={`border-b border-solid border-b-gradientBaseAccent hover:border-b-2 hover:border-gray-800 text-center`}
+              className={`border-b border-solid border-b-gradientBaseAccent hover:border-b-2 hover:border-gray-800 text-center cursor-pointer `}
             >
               Log in {"  "}
             </Link>
