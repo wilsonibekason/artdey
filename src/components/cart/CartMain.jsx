@@ -89,33 +89,39 @@ const CartContainedMain = () => {
                       className={`${paragraphCustom} text-gradientBaseAccent text-md text-ellipsis tracking-widest`}
                     >{`$550`}</p>
                     {/*  */}
-                    <div className={`${flexRow} items-center space-x-5`}>
-                      {/*  */}
-                      <div className={`${flexStart}`}>
-                        <div
-                          className={`${flexRow} items-center ${borderStructure} py-2 md:py-2.5  px-4 md:px-5 space-x-10 items-center rounded shadow`}
-                        >
-                          <span
-                            className={`font-normal text-2xl text-gray-500`}
+                    {/* mobile incremental and decremental component */}
+                    <div className="block md:hidden lg:hidden">
+                      <div className={`${flexRow} items-center space-x-5`}>
+                        {/*  */}
+                        <div className={`${flexStart}`}>
+                          <div
+                            className={`${flexRow} items-center ${borderStructure} py-2 md:py-2.5  px-4 md:px-5 space-x-10 items-center rounded shadow`}
                           >
-                            -
-                          </span>
-                          <span className={`font-normal text-md text-gray-700`}>
-                            1
-                          </span>
-                          <span
-                            className={`font-normal text-2xl text-gray-500`}
-                          >
-                            +
-                          </span>
+                            <span
+                              className={`font-normal text-2xl text-gray-500`}
+                            >
+                              -
+                            </span>
+                            <span
+                              className={`font-normal text-md text-gray-700`}
+                            >
+                              1
+                            </span>
+                            <span
+                              className={`font-normal text-2xl text-gray-500`}
+                            >
+                              +
+                            </span>
+                          </div>
                         </div>
+                        {/*  */}
+                        <MdDelete
+                          size={25}
+                          className={`text-gradientBaseAccent `}
+                        />
                       </div>
-                      {/*  */}
-                      <MdDelete
-                        size={25}
-                        className={`text-gradientBaseAccent `}
-                      />
                     </div>
+
                     {/*  */}
                   </div>
                 </div>
@@ -123,36 +129,39 @@ const CartContainedMain = () => {
                   className={`order-last max-w-[10%] md:max-w-[40%] w-full `}
                 >
                   <div className={`${flexRowJustify}`}>
-                    {/* incremental section */}
-                    <div
-                      className={`${flexRow} hidden md:block lg:block items-center space-x-5`}
-                    >
-                      {/*  */}
-                      <div className={`${flexStart}`}>
-                        <div
-                          className={`${flexRow} items-center ${borderStructure} py-2.5 px-5 space-x-10 items-center rounded shadow`}
-                        >
-                          <span
-                            className={`font-normal text-2xl text-gray-500`}
+                    {/*desktop incremental and decremental  section */}
+                    <div className={`hidden md:block lg:block`}>
+                      <div className={`${flexRow}  items-center space-x-5`}>
+                        {/*  */}
+                        <div className={`${flexStart}`}>
+                          <div
+                            className={`${flexRow} items-center ${borderStructure} py-2.5 px-5 space-x-10 items-center rounded shadow`}
                           >
-                            -
-                          </span>
-                          <span className={`font-normal text-md text-gray-700`}>
-                            1
-                          </span>
-                          <span
-                            className={`font-normal text-2xl text-gray-500`}
-                          >
-                            +
-                          </span>
+                            <span
+                              className={`font-normal text-2xl text-gray-500`}
+                            >
+                              -
+                            </span>
+                            <span
+                              className={`font-normal text-md text-gray-700`}
+                            >
+                              1
+                            </span>
+                            <span
+                              className={`font-normal text-2xl text-gray-500`}
+                            >
+                              +
+                            </span>
+                          </div>
                         </div>
+                        {/*  */}
+                        <MdDelete
+                          size={25}
+                          className={`text-gradientBaseAccent `}
+                        />
                       </div>
-                      {/*  */}
-                      <MdDelete
-                        size={25}
-                        className={`text-gradientBaseAccent `}
-                      />
                     </div>
+
                     <div>
                       <h3
                         className={`${paragraphCustom} text-gradientBaseAccent text-lg tracking-wider`}

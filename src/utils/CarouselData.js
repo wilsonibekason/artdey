@@ -563,30 +563,5 @@ export const Art2CashCollectionDetail = [{}];
                     </button>
                   </div>
                    <div className={`h-[300px] relative`}>
-     
-            <img
-            src={activeImage}
-            alt=""
-            className={`object-cover max-w-full w-full h-full ${
-              hover === id && "block absolute z-[1] "
-            } `}
-            width={800}
-            height={552}
-          />
-     
-          <img
-            src={hiddenImage}
-            alt=""
-            className={` ${
-              hover === id &&
-              "transition ease-in duration-700 delay-900" &&
-              "backdrop-blur-md "
-            }  ${
-              hover !== id && "hidden"
-            }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90 `}
-            width={800}
-            height={552}
-          />
-       
-        </div>
+
  */

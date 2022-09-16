@@ -7,7 +7,9 @@ const OurStory = () => {
     <>
       <div className={`${flexCentered} mx-4 md:mx-12  lg:mx-40`}>
         <div className={`${flexCol} space-y-4 md:space-y-12`}>
-          <h1 className={`${paragraphCustom} text-6xl text-gradientBaseAccent`}>
+          <h1
+            className={`${paragraphCustom} text-2xl md:text-6xl text-gradientBaseAccent`}
+          >
             Our Story
           </h1>
           {/* description */}

@@ -48,7 +48,7 @@ const HomeJournal = () => {
           </div>
 
           <div
-            className={` ${flexRow} flex-nowrap gap-x-10 w-full overflow-x-auto scrollbar-none block lg:hidden`}
+            className={` ${flexRow} flex-nowrap gap-x-10 w-full overflow-x-auto scrollbar-none block md:hidden lg:hidden`}
           >
             {HomeJournalData.map((item, index) => (
               <HomeJournalMobileCard {...item} key={index} />

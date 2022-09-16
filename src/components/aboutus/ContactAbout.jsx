@@ -24,7 +24,7 @@ const ContactAbout = () => {
   const { BsArrowRight } = useIcon();
   return (
     <>
-      <div className={`mx-40`}>
+      <div className={``}>
         <div className={`${flexCol} space-y-12`}>
           {/* contact information */}
           <div>

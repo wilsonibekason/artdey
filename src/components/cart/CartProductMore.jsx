@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles, { Layout } from "../../styles/AppdeyCustomStyles";
 import { ProductArtMoreData } from "../../utils/CarouselData";
 
@@ -13,11 +14,13 @@ const CartProductMoreCard = ({
   setHover,
 }) => {
   const { flexCol, flexCentered, paragraph2, paragraph3 } = styles;
+  const navigate = useNavigate();
   return (
     <>
       <div
         onMouseEnter={() => setHover(id)}
         onMouseLeave={() => setHover(null)}
+        onClick={() => navigate(`/art/${id}`, { replace: true })}
       >
         <div className={`${flexCol} space-y-3`}>
           {/* image section */}

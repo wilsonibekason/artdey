@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import styles from "../../styles/AppdeyCustomStyles";
@@ -9,8 +10,9 @@ const AboutContentDropdown = () => {
   const { paragraphCustom, transitions, flexStart, flexCol, listStyles } =
     styles;
   const { showAboutModal, showAboutDropdown, hideAboutModal } = useIcon();
-  const [aboutHover, setAboutHover] = useState(null);
 
+  const [aboutHover, setAboutHover] = useState(null);
+  const navigate = useNavigate();
   return (
     <>
       <div>
@@ -53,6 +55,7 @@ const AboutContentDropdown = () => {
                               } ${transitions} list-none`}
                               onMouseEnter={() => setAboutHover(data.id)}
                               onMouseLeave={() => setAboutHover(null)}
+                              onClick={() => navigate(`${data.link}`)}
                             >
                               {data.name}
                             </li>

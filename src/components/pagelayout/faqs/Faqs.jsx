@@ -10,7 +10,7 @@ const Faqs = () => {
         <div className={`${flexCol} space-y-10`}>
           <div>
             <h1
-              className={`${paragraphCustom} text-gradientBaseAccent text-6xl`}
+              className={`${paragraphCustom} text-gradientBaseAccent text-2xl md:text-6xl`}
             >
               FAQs
             </h1>

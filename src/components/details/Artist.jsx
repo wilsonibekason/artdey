@@ -37,7 +37,7 @@ const Artist = () => {
             className={`${BannerGridChild4} bg-gradientBaseAccent relative h-[800px] md:h-auto`}
           >
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
-              <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3 `}>
+              <div className={`${flexCol} ${flexStart} max-w-full space-y-3 `}>
                 <h5
                   className={`${paragraphCustom} text-gray-600 text-sm capitalize`}
                 >
@@ -49,7 +49,7 @@ const Artist = () => {
                   Ebeneza
                 </h4>
                 <p
-                  className={`${paragraphCustom} text-lg text-gray-300 tracking-wide leading-8`}
+                  className={`${paragraphCustom} text-sm md:text-lg text-gray-300 tracking-wide leading-8 w-[90%]`}
                 >
                   Ebenezer Ali known as Eben or Ckle a Ghanaian artist born on
                   10th December 1992 in Accra (Ghana). He graduated as a Visual

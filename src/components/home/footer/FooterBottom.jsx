@@ -40,7 +40,7 @@ const FooterBottom = () => {
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((item, index) => (
                   <option
-                    key={index}
+                    key={index + 1}
                     value=""
                     className="text-gray-900 bg-white border border-solid border-gray-500 rounded-t-lg"
                   >
