@@ -4,7 +4,7 @@ import styles from "../../../styles/AppdeyCustomStyles";
 const ImageGrids = () => {
   const { flexCol, paragraphCustom, flexCentered, flexRow } = styles;
   return (
-    <div className="my-40">
+    <div className=" my-10 md:my-20 lg:my-40">
       <div className={`${flexCol}  `}>
         <div className={`flex flex-col-reverse md:flex-row `}>
           <div
@@ -28,13 +28,11 @@ const ImageGrids = () => {
           <div
             className={`max-w-full min-w-[80%] md:min-w-[65%] max-h-[1280px] h-96 md:h-auto`}
           >
-            <div>
-              <img
-                src="https://cdn.shopify.com/s/files/1/0425/2542/5825/files/IMG_5741.jpg?v=1657883507&width=535"
-                alt=""
-                className="w-full h-full object-cover max-w-full "
-              />
-            </div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0425/2542/5825/files/IMG_5741.jpg?v=1657883507&width=535"
+              alt=""
+              className="w-full h-full object-cover max-w-full "
+            />
           </div>
         </div>
         <div className={`flex flex-col md:flex-row `}>
@@ -49,12 +47,12 @@ const ImageGrids = () => {
           </div>
 
           <div
-            className={`max-w-full min-w-[80%] md:min-w-[65%] max-h-[400px] h-96 md:h-auto bg-gradientBaseBg2 relative`}
+            className={`max-w-full min-w-[80%] md:min-w-[65%] max-h-[1000px] h-[500px] md:h-auto bg-gradientBaseBg2 relative`}
           >
             <div className={`absolute inset-0 w-[80%] h-[80%] m-auto`}>
               <div className={``}>
                 <p
-                  className={`${paragraphCustom} text-lg text-gradientBaseAccent tracking-widest leading-8`}
+                  className={`${paragraphCustom} text-lg text-gradientBaseAccent tracking-normal md:tracking-widest  leading-6 md:leading-8`}
                 >
                   Chioma Onyenwe is the founder of Raconteur Productions as well
                   as a Creative Indaba Fellow telling stories in the

@@ -4,7 +4,7 @@ import { useIcon } from "../../services/OnIconContext";
 import styles from "../../styles/AppdeyCustomStyles";
 
 export default function MyModal() {
-  const { flexRow, flexCentered, inputStyles, labelStyleCustom } = styles;
+  const { flexRow, flexCentered, inputStyles2, labelStyleCustom } = styles;
   const { AiOutlineClose, AiOutlineSearch, isOpen, closeModal } = useIcon();
 
   return (
@@ -44,11 +44,11 @@ export default function MyModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-screen transform overflow-hidden  bg-gradientBaseBg py-12 px-4  text-center align-middle shadow-sm transition-all">
+                <Dialog.Panel className="w-screen transform overflow-hidden  bg-gradientBaseBg py-4 md:py-12 px-4  text-center align-middle shadow-sm transition-all">
                   <div className={`${flexCentered} `}>
                     <div className={`${flexRow} items-center space-x-2`}>
-                      <div>
-                        <div className={`relative  group   `}>
+                      <div className="mx-2 md:mx-0">
+                        <div className={`relative  group  max-w-full `}>
                           <span
                             className={`absolute right-2 top-4 focus-within:text-gray-700`}
                           >
@@ -62,7 +62,7 @@ export default function MyModal() {
                             placeholder="search"
                             autoComplete="search"
                             required
-                            className={`${inputStyles}`}
+                            className={`${inputStyles2}  w-full md:w-[26rem]`}
                           />
                           <label
                             htmlFor="email"

@@ -75,4 +75,22 @@ export const Layout = {
   ArtistCollectionLayout:
     "grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-8",
 };
+
+export const defaultResponsiveStyle = {
+  grid: {},
+};
+
+// export const responsiveStyle = {
+//   ...defaultResponsiveStyle,
+//   grid: {
+//     ...defaultResponsiveStyle.grid,
+//     ...responsiveStyle.grid,
+//   },
+//   flexRowColumn: "flex flex-row md:flex-col ",
+//   flexColRow: "flex flex-col md:flex-row",
+// };
+export const responsiveStyle = {
+  flexRowColumn: "flex flex-row md:flex-col ",
+  flexColRow: "flex flex-col md:flex-row",
+};
 export default styles;

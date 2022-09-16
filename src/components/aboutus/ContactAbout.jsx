@@ -1,6 +1,9 @@
 import React from "react";
 import { useIcon } from "../../services/OnIconContext";
-import styles, { Layout } from "../../styles/AppdeyCustomStyles";
+import styles, {
+  Layout,
+  responsiveStyle,
+} from "../../styles/AppdeyCustomStyles";
 
 const ContactAbout = () => {
   const {
@@ -15,27 +18,22 @@ const ContactAbout = () => {
     labelStyleCustom2,
     flexRow,
   } = styles;
-  const {
-    contactGridChild,
-    contactGridChild2,
-    contactGridChild3,
-    contactGridLayout,
-  } = Layout;
+  const { flexColRow } = responsiveStyle;
   const { BsArrowRight } = useIcon();
   return (
     <>
       <div className={``}>
-        <div className={`${flexCol} space-y-12`}>
+        <div className={`${flexCol} space-y-4 md:space-y-12`}>
           {/* contact information */}
           <div>
             <div className={`${flexCol} space-y-5`}>
               <h2
-                className={`${paragraphCustom} text-5xl text-gradientBaseAccent text-center `}
+                className={`${paragraphCustom}  text-2xl md:text-5xl text-gradientBaseAccent text-center `}
               >
                 We would love to work with you
               </h2>
               <p
-                className={`${paragraphCustom} text-md tracking-widest leading-8 text-gradientBaseAccent text-center `}
+                className={`${paragraphCustom} text-sm  md:text-md tracking-wide md:tracking-widest leading-6 md:leading-8 text-gradientBaseAccent text-center  `}
               >
                 If you are a new or seasoned collector, decorator, artist,
                 potential partner, or simply curious about anything we do,
@@ -45,7 +43,9 @@ const ContactAbout = () => {
           </div>
           <div></div>
           <div className={`${flexCol} space-y-6`}>
-            <div className={`${flexRow} space-x-4 `}>
+            <div
+              className={`${flexColRow}  space-y-3 md:space-y-0 space-x-0 md:space-x-4 `}
+            >
               <div>
                 <div>
                   <div className={`relative  group  max-w-full `}>
@@ -54,7 +54,7 @@ const ContactAbout = () => {
                       placeholder="name"
                       autoComplete="name"
                       required
-                      className={`${inputStylesCustom} w-96`}
+                      className={`${inputStylesCustom} w-full  md:w-96`}
                     />
                     <label htmlFor="name" className={`${labelStyleCustom2}`}>
                       Name
@@ -71,7 +71,7 @@ const ContactAbout = () => {
                       placeholder="email"
                       autoComplete="email"
                       required
-                      className={`${inputStylesCustom} w-[400px]`}
+                      className={`${inputStylesCustom} w-full md:w-[400px]`}
                     />
                     <label htmlFor="email" className={`${labelStyleCustom2}`}>
                       Email*
@@ -81,7 +81,7 @@ const ContactAbout = () => {
               </div>{" "}
             </div>
             <div>
-              <div>
+              <div className="">
                 <div className={`relative  group  max-w-full `}>
                   <input
                     type="text"
