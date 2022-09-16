@@ -48,7 +48,7 @@ const NavDropdown = () => {
                           <>
                             <p>
                               <Link
-                                to={`collections`}
+                                to={`/collections`}
                                 key={item.id}
                                 className={`${paragraphCustom} text-md tracking-tight  text-gray-500 cursor-pointer ${
                                   hover === item.id ? "underline" : ""
@@ -65,7 +65,7 @@ const NavDropdown = () => {
                                   .map((list, index) => (
                                     <li
                                       onClick={() =>
-                                        navigate(`collection/${list.id}`, {
+                                        navigate(`/collection/${list.id}`, {
                                           replace: true,
                                         })
                                       }

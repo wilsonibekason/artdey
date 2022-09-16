@@ -34,11 +34,11 @@ const AppdeyApp = () => {
           <Route path="/art/:id" element={<ArtistDetail />} />
           <Route path="/cart" element={<Cart />} />
 
-          <Route path="/pages/about-us" element={<AppAbout />} />
-          <Route path="/pages/faqs" element={<AppFaq />} />
+          <Route path="pages/about-us" element={<AppAbout />} />
+          <Route path="pages/faqs" element={<AppFaq />} />
 
-          <Route path="/policy/terms-of-service" element={<AppTerms />} />
-          <Route path="/policy/refund-policy" element={<AppPolicy />} />
+          <Route path="policy/terms-of-service" element={<AppTerms />} />
+          <Route path="policy/refund-policy" element={<AppPolicy />} />
 
           <Route path="/collections" element={<Collections />} />
           <Route path="/collection/:id" element={<CollectionsView />} />

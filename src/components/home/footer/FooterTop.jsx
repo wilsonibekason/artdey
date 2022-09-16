@@ -34,15 +34,9 @@ const FooterTop = () => {
                     item.members.map((item, i) => (
                       <li key={i} className={`flex justify-start items-start`}>
                         <span
-                          // to={item.link}
-                          // target="_blank"
-                          // rel="noopener noreferrer"
                           className={`${paragraphCustom} text-gray-800 cursor-pointer tracking-wider ${transitions} hover:underline`}
-                          onClick={() =>
-                            navigate(`${item.link}`, { replace: true })
-                          }
                         >
-                          {item.name}
+                          <Link to={item.link}> {item.name}</Link>
                         </span>
                       </li>
                     ))
