@@ -21,7 +21,7 @@ const CartProductMoreCard = ({
       >
         <div className={`${flexCol} space-y-3`}>
           {/* image section */}
-          <div className={`h-[300px] relative`}>
+          <div className={`h-[150px] md:h-[300px] relative`}>
             {/* {!hover === id ? ( */}
             <img
               src={activeImage}
@@ -42,7 +42,7 @@ const CartProductMoreCard = ({
                 "backdrop-blur-md "
               }  ${
                 hover !== id && "hidden"
-              }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90 `}
+              }  object-cover w-full h-[150px] md:h-[300px] absolute z-[3] backdrop-opacity-90 `}
               width={800}
               height={552}
             />
@@ -78,17 +78,17 @@ const CartProductMoreCard = ({
 const CartProductMore = () => {
   const [hover, setHover] = useState(null);
   const { flexCol, flexStart, paragraph2, flexCentered } = styles;
-  const { gridMoreLayoutSection } = Layout;
+  const { SimilargridMoreLayoutSection } = Layout;
   return (
     <>
-      <div className="mt-40">
+      <div className="mt-10 md:mt-40">
         <div className={`${flexCol} space-y-6`}>
           <div className={`${flexStart} my-4`}>
-            <h4 className={`${paragraph2} text-xxl tracking-widest`}>
-              You might also like
+            <h4 className={`${paragraph2} text-xl md:text-xxl tracking-widest`}>
+              You may also like
             </h4>
           </div>
-          <div className={`${gridMoreLayoutSection}`}>
+          <div className={`${SimilargridMoreLayoutSection}`}>
             {ProductArtMoreData.map((item, index) => (
               <CartProductMoreCard
                 {...item}

@@ -22,7 +22,7 @@ const Artist = () => {
       <div className={`my-10`}>
         <div className={`${BannerGridLayout} `}>
           <div className={`${BannerGridChild3}`}>
-            <div className={`  h-[500px] md:h-[700px] lg:h-[500px]`}>
+            <div className={`  h-[300px] md:h-[700px] lg:h-[500px]`}>
               <img
                 src="https://cdn.shopify.com/s/files/1/0425/2542/5825/collections/IMG_7912.jpg?v=1661244261&width=535"
                 alt=""
@@ -33,9 +33,11 @@ const Artist = () => {
             </div>
           </div>
           {/* card contents */}
-          <div className={`${BannerGridChild4} bg-gradientBaseAccent relative`}>
+          <div
+            className={`${BannerGridChild4} bg-gradientBaseAccent relative h-[800px] `}
+          >
             <div className={`inset-0 m-auto absolute w-[80%] h-[80%]`}>
-              <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3`}>
+              <div className={`${flexCol} ${flexStart} max-w-[80%] space-y-3 `}>
                 <h5
                   className={`${paragraphCustom} text-gray-600 text-sm capitalize`}
                 >

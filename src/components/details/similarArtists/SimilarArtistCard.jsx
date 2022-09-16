@@ -21,7 +21,7 @@ const SimilarArtistCard = ({
       >
         <div className={`${flexCol} space-y-3`}>
           {/* image section */}
-          <div className={`h-[300px] relative`}>
+          <div className={`h-[150px] md:h-[300px] relative`}>
             {/* {!hover === id ? ( */}
             <img
               src={activeImage}
@@ -42,7 +42,7 @@ const SimilarArtistCard = ({
                 "backdrop-blur-md "
               }  ${
                 hover !== id && "hidden"
-              }  object-cover w-full  h-[300px] absolute z-[3] backdrop-opacity-90 `}
+              }  object-cover w-full h-[150px]  md:h-[300px] absolute z-[3] backdrop-opacity-90 `}
               width={800}
               height={552}
             />

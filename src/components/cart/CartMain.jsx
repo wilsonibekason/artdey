@@ -28,7 +28,7 @@ const CartContainedMain = () => {
             <div className={`${flexRowJustify}`}>
               <div>
                 <h2
-                  className={`${paragraphCustom} text-4xl text-gradientBaseAccent text-ellipsis tracking-wider capitalize`}
+                  className={`${paragraphCustom} text-xl md:text-4xl text-gradientBaseAccent text-ellipsis tracking-wider capitalize`}
                 >
                   your cart
                 </h2>
@@ -51,10 +51,10 @@ const CartContainedMain = () => {
               {/* <div className={`-order-[20] justify-end`}>
                
               </div> */}
-              <div className={`order-last max-w-[40%] w-full`}>
+              <div className={`order-last max-w-[10%] md:max-w-[40%] w-full`}>
                 <div className={`${flexRowJustify}`}>
                   <h4
-                    className={`${paragraphCustom} text-xss uppercase text-gradientBaseAccent tracking-widest`}
+                    className={`${paragraphCustom} text-xss uppercase text-gradientBaseAccent tracking-widest hidden md:block lg:block`}
                   >
                     quantity
                   </h4>
@@ -75,9 +75,10 @@ const CartContainedMain = () => {
                     <img
                       src="https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8296.heic?v=1661246831&width=300"
                       alt=""
-                      className={`w-28 h-40 object-cover`}
+                      className={`w-28 h-28 md:h-40 object-cover`}
                     />
                   </div>
+                  {/* mobile version */}
                   <div className={`${flexCol} space-y-4`}>
                     <h4
                       className={`${paragraphCustom} text-gradientBaseAccent text-lg tracking-widest capitalize`}
@@ -87,12 +88,43 @@ const CartContainedMain = () => {
                     <p
                       className={`${paragraphCustom} text-gradientBaseAccent text-md text-ellipsis tracking-widest`}
                     >{`$550`}</p>
+                    {/*  */}
+                    <div className={`${flexRow} items-center space-x-5`}>
+                      {/*  */}
+                      <div className={`${flexStart}`}>
+                        <div
+                          className={`${flexRow} items-center ${borderStructure} py-2.5 px-5 space-x-10 items-center rounded shadow`}
+                        >
+                          <span
+                            className={`font-normal text-2xl text-gray-500`}
+                          >
+                            -
+                          </span>
+                          <span className={`font-normal text-md text-gray-700`}>
+                            1
+                          </span>
+                          <span
+                            className={`font-normal text-2xl text-gray-500`}
+                          >
+                            +
+                          </span>
+                        </div>
+                      </div>
+                      {/*  */}
+                      <MdDelete
+                        size={25}
+                        className={`text-gradientBaseAccent `}
+                      />
+                    </div>
+                    {/*  */}
                   </div>
                 </div>
                 <div className={`order-last max-w-[40%] w-full `}>
                   <div className={`${flexRowJustify}`}>
                     {/* incremental section */}
-                    <div className={`${flexRow} items-center space-x-5`}>
+                    <div
+                      className={`${flexRow} hidden md:block lg:block items-center space-x-5`}
+                    >
                       {/*  */}
                       <div className={`${flexStart}`}>
                         <div
@@ -136,39 +168,45 @@ const CartContainedMain = () => {
             {/* <div>
 
             </div> */}
-            <div className={`${flexRow}  justify-end space-x-5`}>
+            <div
+              className={`${flexRow} items-center justify-center md:justify-end space-x-5`}
+            >
               <h4
-                className={`${paragraphCustom} text-gray-800 text-lg text-ellipsis tracking-wider`}
+                className={`${paragraphCustom} text-gray-800 text-sm lg:text-lg text-ellipsis tracking-wider`}
               >
                 Subtotal
               </h4>
               <p
-                className={`${paragraphCustom} tracking-widest text-gradientBaseAccent text-xl `}
+                className={`${paragraphCustom} tracking-widest text-gradientBaseAccent text-md lg:text-xl `}
               >{`$550 USD`}</p>
             </div>
-            <div className={`${itemsEnd}`}>
+            <div className={`flex justify-center md:justify-end items-center `}>
               <p
                 className={`${paragraphCustom} tracking-widest text-gradientBaseAccent text-sm `}
               >
                 Taxes and shipping calculated at checkout
               </p>
             </div>
-            <div className={`${itemsEnd}  `}>
+            <div
+              className={`flex justify-center md:justify-end items-center  mx-40 md:mx-0`}
+            >
               <button
-                className={`${ButtonStyle} text-gradientBaseBg px-40 py-3 bg-gradientBaseAccent cursor-pointer `}
+                className={`${ButtonStyle}  text-gradientBaseBg px-36 md:px-40 py-3 bg-gradientBaseAccent cursor-pointer  text-center`}
               >
                 Checkout
               </button>
             </div>
             {/*  */}
-            <div className={`${flexRow} ${itemsEnd} space-x-4`}>
+            <div
+              className={` flex flex-col md:flex-row justify-center md:justify-end space-x-4 space-y-4`}
+            >
               <button
-                className={`${ButtonStyle} text-white font-black bg-gradientBaseAccent py-2.5 px-8 cursor-pointer`}
+                className={`${ButtonStyle} text-white font-black bg-gradientBaseAccent py-2.5 px-10 md:px-8 cursor-pointer`}
               >
                 Shop pay
               </button>
               <button
-                className={`${ButtonStyle} text-white font-bold bg-gradientBaseAccent py-2.5 px-8 cursor-pointer`}
+                className={`${ButtonStyle} text-white font-bold bg-gradientBaseAccent py-2.5 px-12 md:px-8 cursor-pointer`}
               >
                 GPay
               </button>

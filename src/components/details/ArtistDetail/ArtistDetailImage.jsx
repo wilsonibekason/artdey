@@ -55,9 +55,7 @@ const ArtistDetailImage = () => {
         className={` max-h-screen max-w-full overflow-y-auto scrollbar-none sticky`}
       >
         <div className={`${flexCol} space-y-10`}>
-          <div
-            className={`phone:block tablet:hidden desktop:block Xdesktop:block`}
-          >
+          <div className={`hidden md:hidden lg:block`}>
             <ArtMainImage />
           </div>
           <div className={``}>

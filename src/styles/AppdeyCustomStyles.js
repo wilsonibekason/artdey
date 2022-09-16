@@ -43,7 +43,7 @@ const styles = {
 };
 
 export const uniqueStyleComponents = {
-  paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent`,
+  paragraphUnderlined: `font-electra font-normal text-gradientBaseAccent text-ellipsis tracking-wider text-md md:text-lg border-b  border-b-gray-500 border-solid hover:border-b-2 hover:border-b-gradientBaseAccent`,
   text: "text-electra text-gradientBaseAccent text-ellipsis text-md font-normal ",
 };
 
@@ -52,10 +52,8 @@ export const Layout = {
   BannerGridLayout: "grid grid-cols-12 gap-0 ",
   BannerGridChild: "col-span-12 md:col-span-4",
   BannerGridChild2: "col-span-12 md:col-span-8",
-  BannerGridChild3:
-    "col-span-6 tablet:col-span-3 desktop:col-span-4 Xdesktop:col-span-4",
-  BannerGridChild4:
-    " col-span-6 tablet:col-span-9 desktop:col-span-8 Xdesktop:col-span-8",
+  BannerGridChild3: "col-span-12 md:col-span-3 lg:col-span-4 xl:col-span-4",
+  BannerGridChild4: "col-span-12 md:col-span-3 lg:col-span-4 xl:col-span-4",
   CollectionsLayout:
     "grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   JournalCollectionsLayout:
@@ -68,6 +66,8 @@ export const Layout = {
   ProductDetailChild2: "phone:col-span-1 tablet:col-span-6 desktop:col-span-8",
   gridMoreLayoutSection:
     "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 md:gap-6",
+  SimilargridMoreLayoutSection:
+    "grid grid-cols-2 md:grid-cols-2  lg:grid-cols-4 gap-4 md:gap-6",
   contactGridLayout: "grid grid-cols-12 gap-5",
   contactGridChild: "col-span-6",
   contactGridChild2: "col-span-6",

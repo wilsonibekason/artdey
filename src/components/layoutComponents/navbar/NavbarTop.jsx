@@ -34,7 +34,7 @@ const NavbarTop = () => {
               <img src={artdey_logo} alt="artdey_logo" className={`w-56`} />
             </Link>
           </div>
-          <div className={`${flexRow} space-x-6`}>
+          <div className={`${flexRow} space-x-2 md:space-x-6`}>
             <AiOutlineSearch
               size={25}
               className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block laptop:hidden desktop:hidden Xdesktop:hidden`}

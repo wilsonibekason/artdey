@@ -9,17 +9,19 @@ import SimilarArtistCard from "./SimilarArtistCard";
 const SimilarArtistLyout = () => {
   const [hover, setHover] = useState(null);
   const { flexCol, flexCentered, paragraph2, flexStart } = styles;
-  const { gridMoreLayoutSection } = Layout;
+  const { SimilargridMoreLayoutSection } = Layout;
   return (
     <>
-      <div className="mt-40">
+      <div className="mt-10 md:mt-40">
         <div className={`${flexCol} space-y-6`}>
           <div className={`${flexStart} my-4`}>
-            <h4 className={`${paragraph2} text-xxl tracking-widest`}>
-              You might also like
+            <h4
+              className={`${paragraph2} text-xl md:text-xxl tracking-widest capitalize`}
+            >
+              You may also like
             </h4>
           </div>
-          <div className={`${gridMoreLayoutSection}`}>
+          <div className={`${SimilargridMoreLayoutSection}`}>
             {ProductArtMoreData.map((item, index) => (
               <SimilarArtistCard
                 {...item}
