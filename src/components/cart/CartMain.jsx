@@ -70,7 +70,7 @@ const CartContainedMain = () => {
             {/* cart bottom */}
             <div>
               <div className={`${flexRowJustify}`}>
-                <div className={`order-first ${flexRow} space-x-10`}>
+                <div className={` ${flexRow} space-x-4 md:space-x-10`}>
                   <div>
                     <img
                       src="https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8296.heic?v=1661246831&width=300"
@@ -79,9 +79,9 @@ const CartContainedMain = () => {
                     />
                   </div>
                   {/* mobile version */}
-                  <div className={`${flexCol} space-y-4`}>
+                  <div className={`${flexCol} space-y-2 md:space-y-4`}>
                     <h4
-                      className={`${paragraphCustom} text-gradientBaseAccent text-lg tracking-widest capitalize`}
+                      className={`${paragraphCustom} text-gradientBaseAccent text-md md:text-lg tracking-widest capitalize`}
                     >
                       focused
                     </h4>
@@ -93,7 +93,7 @@ const CartContainedMain = () => {
                       {/*  */}
                       <div className={`${flexStart}`}>
                         <div
-                          className={`${flexRow} items-center ${borderStructure} py-2.5 px-5 space-x-10 items-center rounded shadow`}
+                          className={`${flexRow} items-center ${borderStructure} py-2 md:py-2.5  px-4 md:px-5 space-x-10 items-center rounded shadow`}
                         >
                           <span
                             className={`font-normal text-2xl text-gray-500`}
@@ -119,7 +119,9 @@ const CartContainedMain = () => {
                     {/*  */}
                   </div>
                 </div>
-                <div className={`order-last max-w-[40%] w-full `}>
+                <div
+                  className={`order-last max-w-[10%] md:max-w-[40%] w-full `}
+                >
                   <div className={`${flexRowJustify}`}>
                     {/* incremental section */}
                     <div
@@ -191,24 +193,24 @@ const CartContainedMain = () => {
               className={`flex justify-center md:justify-end items-center  mx-40 md:mx-0`}
             >
               <button
-                className={`${ButtonStyle}  text-gradientBaseBg px-36 md:px-40 py-3 bg-gradientBaseAccent cursor-pointer  text-center`}
+                className={`${ButtonStyle}  text-gradientBaseBg px-32 md:px-40 py-2.5 md:py-3 bg-gradientBaseAccent cursor-pointer  text-center`}
               >
                 Checkout
               </button>
             </div>
             {/*  */}
             <div
-              className={` flex flex-col md:flex-row justify-center md:justify-end space-x-4 space-y-4`}
+              className={` flex flex-col md:flex-row justify-center md:justify-end space-x-0 md:space-x-4 space-y-4 md:space-y-0 mx-4`}
             >
               <button
-                className={`${ButtonStyle} text-white font-black bg-gradientBaseAccent py-2.5 px-10 md:px-8 cursor-pointer`}
+                className={`${ButtonStyle} text-white font-black bg-gradientBaseAccent py-2.5 px-8 md:px-8 cursor-pointer`}
               >
                 Shop pay
               </button>
               <button
-                className={`${ButtonStyle} text-white font-bold bg-gradientBaseAccent py-2.5 px-12 md:px-8 cursor-pointer`}
+                className={`${ButtonStyle} text-white font-black bg-gradientBaseAccent py-2.5 px-8 md:px-8 cursor-pointer`}
               >
-                GPay
+                Google pay
               </button>
             </div>
           </div>
