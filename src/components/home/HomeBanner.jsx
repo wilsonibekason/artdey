@@ -16,7 +16,7 @@ const HomeBanner = () => {
     <>
       <div>
         <div
-          className={`h-full md:h-screen md:max-h-screen phone:my-8 tablet:my-12 desktop:my-40 Xdesktop:my-40`}
+          className={`h-full md:h-screen md:max-h-screen my-8 md:my-12 lg:my-40`}
         >
           <div
             className={`${BannerGridLayout} h-max-h-[40%] md:max-h-[40vh] h-[30%] md:h-[40vh]`}

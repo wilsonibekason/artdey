@@ -5,7 +5,7 @@ import { SelectOptionData } from "../../../utils/CarouselData";
 const FooterBottom = () => {
   const { flexCol, flexCentered, paragraphCustom } = styles;
   const { PaymentLayout } = Layout;
-
+  // hidden md:block lg:block
   return (
     <>
       <div className={`my-0 md:my-12`}>
@@ -22,7 +22,6 @@ const FooterBottom = () => {
                 ))}
             </div>
           </div>
-
           <div className={`${flexCentered}`}>
             <div>
               <p className={`${paragraphCustom} text-[10px] text-gray-900`}>

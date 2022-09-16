@@ -60,7 +60,7 @@ export const Layout = {
     "grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
   JournalCollectionsLayout:
     "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-8",
-  PaymentLayout: "grid grid-cols-8 gap-4",
+  PaymentLayout: "grid grid-cols-5 md:grid-cols-8 gap-2 md:gap-4",
   AdvanceNavLayout: "grid grid-cols-6 gap-4",
   ProductDetailLayout:
     "grid phone:grid-cols-1  tablet:grid-cols-12 laptop:grid-cols-12 desktop:grid-cols-12 Xdesktop:grid-cols-12  gap-0",

@@ -8,12 +8,13 @@ import { FooterTopData } from "../../../utils/CarouselData";
 const FooterTop = () => {
   const {
     flexCol,
-    flexRow,
-    flexRowJustify,
     paragraphCustom,
     transitions,
     inputStyles,
     labelStyleCustom,
+    inputStyles2,
+    labelStyleCustom2,
+    flexCentered,
   } = styles;
   const { BsArrowRight } = useIcon();
   return (
@@ -21,14 +22,14 @@ const FooterTop = () => {
       <div className={`${flexCol} space-y-8`}>
         <div>
           <div
-            className={`flex flex-col md:flex-row md:justify-between lg:justify-between md:items-center items-start`}
+            className={`flex flex-col md:flex-row md:justify-between lg:justify-between md:items-center`}
           >
             <div>
-              <div>
+              <div className="">
                 <ul className={`${flexCol} space-y-4`}>
                   {FooterTopData.map((item, index) =>
                     item.members.map((item, i) => (
-                      <li key={i}>
+                      <li key={i} className={`flex justify-start items-start`}>
                         <Link
                           to={item.link}
                           target="_blank"
@@ -70,12 +71,12 @@ const FooterTop = () => {
         {/*  */}
         <div className={`${flexCol} space-y-6`}>
           <h3
-            className={`${paragraphCustom} text-gray-900 text-sm md:text-lg lg:text-xl`}
+            className={`${paragraphCustom} text-gray-900 text-sm md:text-lg lg:text-xl text-center md:text-end`}
           >
             Subscribe to our emails
           </h3>
           {/* email submittmission */}
-          <div>
+          <div className={`${flexCentered}`}>
             <div
               className={`relative  group phone:max-w-[75%] tablet:max-w-[70%] desktop:max-w-[35%] Xdesktop:max-w-[35%] `}
             >
@@ -89,9 +90,9 @@ const FooterTop = () => {
                 placeholder="Email"
                 autoComplete="email"
                 required
-                className={`${inputStyles}`}
+                className={`${inputStyles2} `}
               />
-              <label htmlFor="email" className={`${labelStyleCustom}`}>
+              <label htmlFor="email" className={`${labelStyleCustom2}`}>
                 Email
               </label>
             </div>
