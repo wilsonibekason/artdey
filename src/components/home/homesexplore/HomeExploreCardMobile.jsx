@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../../../styles/AppdeyCustomStyles";
 
 const HomeExploreCardMobile = ({
@@ -12,12 +13,13 @@ const HomeExploreCardMobile = ({
   setHover,
 }) => {
   const { flexCol, flexCentered, paragraph2, paragraph3 } = styles;
-
+  const navigate = useNavigate();
   return (
     <>
       <div
         onMouseEnter={() => setHover(id)}
         onMouseLeave={() => setHover(null)}
+        onClick={() => navigate(`/art/${id} `, { replace: true })}
         className="max-w-[50%] sm:min-w-[30%]  max-h-[20%] md:max-h-[50%] flex-shrink-0"
       >
         <div className={`${flexCol} space-y-1 `}>
