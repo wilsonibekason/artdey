@@ -1,6 +1,6 @@
 import React from "react";
 import TermsofService from "../../components/policiesLayout/terms-of-service/TermsofService";
-import { Layout } from "../../styles/AppdeyCustomStyles";
+import Layout from "../../views/Layout";
 
 const AppTerms = () => {
   return (

@@ -5,11 +5,11 @@ const TermsofService = () => {
   const { flexCol, paragraphCustom } = styles;
   return (
     <>
-      <div className="mx-72">
-        <div className={`${flexCol} space-y-10`}>
+      <div className="mx-2 md:mx-56 lg:mx-72">
+        <div className={`${flexCol} space-y-5 md:space-y-10`}>
           <div>
             <h1
-              className={`${paragraphCustom} capitalize text-4xl text-gradientBaseAccent text-center `}
+              className={`${paragraphCustom} capitalize text-2xl md:text-4xl text-gradientBaseAccent text-center `}
             >
               terms of service
             </h1>
@@ -18,7 +18,7 @@ const TermsofService = () => {
 
           <div className={`${flexCol} space-y-2`}>
             <h2
-              className={`${paragraphCustom}  text-xl text-gradientBaseAccent tracking-wider uppercase `}
+              className={`${paragraphCustom} text-lg md:text-xl text-gradientBaseAccent tracking-wider uppercase `}
             >
               overview
             </h2>

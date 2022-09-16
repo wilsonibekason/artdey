@@ -6,7 +6,7 @@ const Faqs = () => {
   const { flexCol, flexCentered, paragraphCustom } = styles;
   return (
     <>
-      <div className={`mx-40`}>
+      <div className={`mx-3 md:mx-20 lg:mx-40`}>
         <div className={`${flexCol} space-y-10`}>
           <div>
             <h1

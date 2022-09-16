@@ -2,6 +2,7 @@ import React from "react";
 import { ContactAbout, ImageGrid } from "../../components/aboutus";
 import ImageGrids from "../../components/aboutus/refractor/ImageGrids";
 import { Faqs } from "../../components/pagelayout";
+import Layout from "../../views/Layout";
 
 const AppFaq = () => {
   return (
