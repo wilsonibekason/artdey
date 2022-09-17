@@ -48,7 +48,7 @@ const FooterTop = () => {
               <img
                 src={art2cashBg}
                 alt=""
-                className="w-32 md:w-40 cursor-pointer"
+                className="w-28 md:w-40 cursor-pointer"
               />
             </Link>
             <div className={``}>

@@ -46,7 +46,7 @@ const NavbarTop = () => {
               <img
                 src={art2cashBg}
                 alt="artdey_logo"
-                className={`w-32 md:w-40`}
+                className={`w-28 md:w-40`}
               />
             </Link>
           </div>

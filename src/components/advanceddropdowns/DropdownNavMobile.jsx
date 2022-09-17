@@ -103,13 +103,32 @@ export default function DropdownMenu() {
               Subject!
             </DropdownItem>
             <DropdownItem rightIcon={<BsArrowRight />}>Gift Cards</DropdownItem>
-            <DropdownItem rightIcon={<BsArrowRight />}>JavaScript</DropdownItem>
             <DropdownItem rightIcon={<BsArrowRight />}>
               Discover all art
             </DropdownItem>
           </div>
         </CSSTransition>
+        {/* displaying about page */}
 
+        <CSSTransition
+          in={activeMenu === "about"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="main" leftIcon={<BsArrowLeft />}>
+              <h2>About</h2>
+            </DropdownItem>
+            {/* dynamically display about links */}
+            {[...FooterTopData[0].members].map((item, index) => (
+              <DropdownItem key={item.id} link={item.link}>
+                {item.name}
+              </DropdownItem>
+            ))}
+          </div>
+        </CSSTransition>
         <CSSTransition
           in={activeMenu === "animals"}
           timeout={500}
@@ -125,27 +144,6 @@ export default function DropdownMenu() {
             <DropdownItem leftIcon="🐸">Frog</DropdownItem>
             <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
             <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
-          </div>
-        </CSSTransition>
-        {/* displaying about page */}
-
-        <CSSTransition
-          in={activeMenu === "about"}
-          timeout={500}
-          classNames="menu-secondary"
-          unmountOnExit
-          onEnter={calcHeight}
-        >
-          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
-            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
-              <h2>About</h2>
-            </DropdownItem>
-            {/* dynamically display about links */}
-            {[...FooterTopData[0].members].map((item, index) => (
-              <DropdownItem key={item.id} link={item.link}>
-                {item.name}
-              </DropdownItem>
-            ))}
           </div>
         </CSSTransition>
 

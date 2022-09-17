@@ -12,7 +12,8 @@ const HomeExploreCardMobile = ({
   hover,
   setHover,
 }) => {
-  const { flexCol, flexCentered, paragraph2, paragraph3 } = styles;
+  const { flexCol, flexCentered, paragraph2, paragraph3, paragraphCustom } =
+    styles;
   const navigate = useNavigate();
   return (
     <>
@@ -33,14 +34,14 @@ const HomeExploreCardMobile = ({
             />
           </div>
           {/*  */}
-          <div className={`mt-2 md:mt-0`}>
+          <div className={`mt-3 md:mt-0`}>
             <div className={`${flexCol} space-y-1 md:space-y-2`}>
               <div className={`${flexCentered}`}>
                 <h4 className={`${paragraph2} text-xss md:text-md `}>{tag}</h4>
               </div>
               <div className="pr-3">
                 <p
-                  className={`${paragraph3} text-sm md:text-md tracking-widest uppercase text-center`}
+                  className={`${paragraphCustom}  text-gradientBaseAccent text-[10px] md:text-md tracking-widest uppercase text-center`}
                 >
                   {author}
                 </p>
