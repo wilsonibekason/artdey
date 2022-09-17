@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import { useIcon } from "../../services/OnIconContext";
 import styles, { dropdownStylesLayout } from "../../styles/AppdeyCustomStyles";
-import { AdvanceNavContentData } from "../../utils/CarouselData";
+import { AdvanceNavContentData, FooterTopData } from "../../utils/CarouselData";
 
 export default function DropdownMenu() {
+  const navigate = useNavigate();
   const [activeMenu, setActiveMenu] = useState("main");
   const [menuHeight, setMenuHeight] = useState(null);
   const dropdownRef = useRef(null);
@@ -29,8 +31,14 @@ export default function DropdownMenu() {
       >
         <span className={`${flexRow} space-x-2 items-center`}>
           {props.leftIcon}
-
-          {props.children}
+          <p
+            onClick={() =>
+              navigate(`/collection/${props.link}`, { replace: true })
+            }
+          >
+            {" "}
+            {props.children}
+          </p>
         </span>
 
         <span className="icon-right">{props.rightIcon}</span>
@@ -64,7 +72,7 @@ export default function DropdownMenu() {
             <DropdownItem
               //   leftIcon="🦧"
               rightIcon={<BsArrowRight />}
-              goToMenu="animals"
+              goToMenu="about"
             >
               About
             </DropdownItem>
@@ -119,6 +127,28 @@ export default function DropdownMenu() {
             <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
           </div>
         </CSSTransition>
+        {/* displaying about page */}
+
+        <CSSTransition
+          in={activeMenu === "about"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
+              <h2>About</h2>
+            </DropdownItem>
+            {/* dynamically display about links */}
+            {[...FooterTopData[0].members].map((item, index) => (
+              <DropdownItem key={item.id} link={item.link}>
+                {item.name}
+              </DropdownItem>
+            ))}
+          </div>
+        </CSSTransition>
+
         {/* for displaying all artists */}
         <CSSTransition
           in={activeMenu === "artist"}
@@ -135,7 +165,9 @@ export default function DropdownMenu() {
             {[...AdvanceNavContentData[0].collections]
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item, index) => (
-                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+                <DropdownItem key={index + 1} link={item.id}>
+                  {item.name}
+                </DropdownItem>
               ))}
           </div>
         </CSSTransition>
@@ -155,7 +187,9 @@ export default function DropdownMenu() {
             {[...AdvanceNavContentData[1].collections]
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item, index) => (
-                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+                <DropdownItem key={index + 1} link={item.id}>
+                  {item.name}
+                </DropdownItem>
               ))}
           </div>
         </CSSTransition>
@@ -176,7 +210,9 @@ export default function DropdownMenu() {
             {[...AdvanceNavContentData[2].collections]
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item, index) => (
-                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+                <DropdownItem key={index + 1} link={item.id}>
+                  {item.name}
+                </DropdownItem>
               ))}
           </div>
         </CSSTransition>
@@ -196,7 +232,9 @@ export default function DropdownMenu() {
             {[...AdvanceNavContentData[3].collections]
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item, index) => (
-                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+                <DropdownItem key={index + 1} link={item.id}>
+                  {item.name}
+                </DropdownItem>
               ))}
           </div>
         </CSSTransition>
