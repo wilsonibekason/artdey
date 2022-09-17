@@ -6,7 +6,7 @@ import {
   AiOutlineMenu,
 } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-import { BsMinecartLoaded, BsArrowRight } from "react-icons/bs";
+import { BsMinecartLoaded, BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown, MdOutlineCancel } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { FiDownload, FiFilter } from "react-icons/fi";
@@ -16,6 +16,8 @@ export const IconProvider = ({ children }) => {
   let [isOpen, setIsOpen] = useState(false);
   const [showNavContent, setShowNavContents] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+  const [navMobileShow, setNavMobileShow] = useState(false);
+  const [DropdownOpen, setDropdownOpen] = useState(false);
   /// navbar visibility
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -52,6 +54,12 @@ export const IconProvider = ({ children }) => {
   const hideNav = () => setShowNavContents((prev) => !prev);
   const showAboutModal = () => setShowAboutDropdown((prev) => !prev);
   const hideAboutModal = () => setShowAboutDropdown((prev) => !prev);
+  ////////
+  const hideMobileNav = () => setNavMobileShow((prev) => !prev);
+  const showMobileNav = () => setNavMobileShow((prev) => !prev);
+  //////
+  const dropdownOpen = () => setDropdownOpen((prev) => !prev);
+  const dropdownClose = () => setDropdownOpen((prev) => !prev);
   //// about dropdown simple navbar logic
   return (
     <IconContext.Provider
@@ -61,6 +69,7 @@ export const IconProvider = ({ children }) => {
         BsMinecartLoaded,
         MdOutlineKeyboardArrowDown,
         BsArrowRight,
+        BsArrowLeft,
         MdOutlineCancel,
         AiOutlineClose,
         FiDownload,
@@ -81,6 +90,15 @@ export const IconProvider = ({ children }) => {
         showAboutDropdown,
         hideAboutModal,
         show,
+        /////
+        navMobileShow,
+        setNavMobileShow,
+        hideMobileNav,
+        showMobileNav,
+        ///
+        DropdownOpen,
+        dropdownOpen,
+        dropdownClose,
       }}
     >
       {children}

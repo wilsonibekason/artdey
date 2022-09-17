@@ -11,6 +11,8 @@ const NavbarTop = () => {
     BsMinecartLoaded,
     openModal,
     AiOutlineMenu,
+    showMobileNav,
+    dropdownOpen,
   } = useIcon();
   const { flexRowJustify, flexRow, transitions } = styles;
   return (
@@ -26,12 +28,17 @@ const NavbarTop = () => {
             <AiOutlineMenu
               size={25}
               className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block cursor-pointer  tablet:block desktop:hidden Xdesktop:hidden`}
-              onClick={openModal}
+              // onClick={showMobileNav}
+              onClick={dropdownOpen}
             />
           </div>
           <div>
             <Link to="/">
-              <img src={art2cashBg} alt="artdey_logo" className={`w-40`} />
+              <img
+                src={art2cashBg}
+                alt="artdey_logo"
+                className={`w-32 md:w-40`}
+              />
             </Link>
           </div>
           <div className={`${flexRow} space-x-2 md:space-x-6`}>

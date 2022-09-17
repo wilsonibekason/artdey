@@ -26,16 +26,6 @@ export const ExploreData = [
     price: "1,500",
     id: 1,
   },
-  //   {
-  //     activeImage:
-  //       "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/Confidence.jpg?v=1661247436&width=533",
-  //     hiddenImage:
-  //       "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/wallapp-29082022-102248.jpg?v=1661761414&width=1066",
-  //     tag: "Focused",
-  //     author: " Ebenezer",
-  //     price: "550",
-  //     id: 2,
-  //   },
   {
     activeImage:
       "https://cdn.shopify.com/s/files/1/0425/2542/5825/products/IMG_8296.heic?v=1661246831&width=1066",
@@ -180,11 +170,6 @@ export const FooterTopData = [
         id: uuid(),
         link: "/policy/terms-of-service",
       },
-      // {
-      //   name: "Contact Us",
-      //   id: uuid(),
-      //   link: "pages/terms-of-service",
-      // },
       {
         name: "Refund Policy",
         id: uuid(),

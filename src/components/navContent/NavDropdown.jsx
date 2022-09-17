@@ -39,9 +39,7 @@ const NavDropdown = () => {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel
-                    className={` w-full mx-16 transform overflow-y-auto  bg-gradientBaseBg py-12 px-4  text-center align-middle  transition-all `}
-                  >
+                  <Dialog.Panel className=" w-full mx-16 transform overflow-y-auto  bg-gradientBaseBg py-12 px-4  text-center align-middle  transition-all ">
                     <div>
                       <div className={`${AdvanceNavLayout}`}>
                         {AdvanceNavContentData.map((item, index) => (

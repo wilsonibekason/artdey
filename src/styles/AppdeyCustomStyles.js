@@ -95,4 +95,13 @@ export const responsiveStyle = {
   flexCenteredStart:
     "flex items-center justify-center md:items-start md:justify-start",
 };
+
+export const dropdownStylesLayout = {
+  bg: "#242526",
+  bg_accent: "#484a4d",
+  text_color: "#dadce1",
+  nav_size: "60px",
+  border_radius: "8px",
+  speed: "500ms",
+};
 export default styles;
