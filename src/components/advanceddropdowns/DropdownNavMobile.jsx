@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import { useIcon } from "../../services/OnIconContext";
 import styles, { dropdownStylesLayout } from "../../styles/AppdeyCustomStyles";
+import { AdvanceNavContentData } from "../../utils/CarouselData";
 
 export default function DropdownMenu() {
   const [activeMenu, setActiveMenu] = useState("main");
@@ -9,7 +10,7 @@ export default function DropdownMenu() {
   const dropdownRef = useRef(null);
   const { BsArrowLeft, BsArrowRight } = useIcon();
   const { border_radius, bg } = dropdownStylesLayout;
-  const { flexRowJustify, paragraphCustom } = styles;
+  const { flexRowJustify, paragraphCustom, transitions, flexRow } = styles;
   useEffect(() => {
     setMenuHeight(dropdownRef.current?.firstChild.offsetHeight);
   }, []);
@@ -23,12 +24,14 @@ export default function DropdownMenu() {
     return (
       <a
         href="#"
-        className={`${flexRowJustify} ${paragraphCustom} text-gradientBaseAccent text-md text-ellipsis tracking-wide leading-7 `}
+        className={`${flexRowJustify} ${paragraphCustom} text-gradientBaseAccent text-md text-ellipsis tracking-wide leading-9 `}
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
       >
-        {/* <span className="icon-button">{props.leftIcon}</span> */}
+        <span className={`${flexRow} space-x-2 items-center`}>
+          {props.leftIcon}
 
-        {props.children}
+          {props.children}
+        </span>
 
         <span className="icon-right">{props.rightIcon}</span>
       </a>
@@ -38,7 +41,7 @@ export default function DropdownMenu() {
   return (
     <div className="relative z-10">
       <div
-        className={`absolute top-[10px] w-[320px]  bg-gradientBaseBg px-8 py-20 overflow-hidden transition min-h-screen h-screen`}
+        className={`absolute top-[10px] w-[320px]  bg-gradientBaseBg px-4 py-20 overflow-hidden transition min-h-screen h-screen`}
         style={{ height: menuHeight }}
         ref={dropdownRef}
       >
@@ -50,16 +53,16 @@ export default function DropdownMenu() {
           onEnter={calcHeight}
         >
           <div className="w-full">
-            <DropdownItem>My Profile</DropdownItem>
+            <DropdownItem>Art2Cash</DropdownItem>
             <DropdownItem
-              leftIcon={<BsArrowLeft />}
+              //   leftIcon={<BsArrowLeft />}
               rightIcon={<BsArrowRight />}
-              goToMenu="settings"
+              goToMenu="shop"
             >
               Shop
             </DropdownItem>
             <DropdownItem
-              leftIcon="🦧"
+              //   leftIcon="🦧"
               rightIcon={<BsArrowRight />}
               goToMenu="animals"
             >
@@ -69,7 +72,7 @@ export default function DropdownMenu() {
         </CSSTransition>
 
         <CSSTransition
-          in={activeMenu === "settings"}
+          in={activeMenu === "shop"}
           timeout={500}
           classNames="menu-secondary"
           unmountOnExit
@@ -77,12 +80,25 @@ export default function DropdownMenu() {
         >
           <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
             <DropdownItem goToMenu="main" leftIcon={<BsArrowLeft />}>
-              <h2>My Tutorial</h2>
+              <h2>Shop</h2>
             </DropdownItem>
-            <DropdownItem leftIcon={<BsArrowRight />}>HTML</DropdownItem>
-            <DropdownItem leftIcon={<BsArrowRight />}>CSS</DropdownItem>
-            <DropdownItem leftIcon={<BsArrowRight />}>JavaScript</DropdownItem>
-            <DropdownItem leftIcon={<BsArrowRight />}>Awesome!</DropdownItem>
+            <DropdownItem goToMenu="artist" rightIcon={<BsArrowRight />}>
+              Artist
+            </DropdownItem>
+            <DropdownItem goToMenu="price" rightIcon={<BsArrowRight />}>
+              Price
+            </DropdownItem>
+            <DropdownItem goToMenu="medium" rightIcon={<BsArrowRight />}>
+              Medium
+            </DropdownItem>
+            <DropdownItem goToMenu="subject" rightIcon={<BsArrowRight />}>
+              Subject!
+            </DropdownItem>
+            <DropdownItem rightIcon={<BsArrowRight />}>Gift Cards</DropdownItem>
+            <DropdownItem rightIcon={<BsArrowRight />}>JavaScript</DropdownItem>
+            <DropdownItem rightIcon={<BsArrowRight />}>
+              Discover all art
+            </DropdownItem>
           </div>
         </CSSTransition>
 
@@ -101,6 +117,87 @@ export default function DropdownMenu() {
             <DropdownItem leftIcon="🐸">Frog</DropdownItem>
             <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
             <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
+          </div>
+        </CSSTransition>
+        {/* for displaying all artists */}
+        <CSSTransition
+          in={activeMenu === "artist"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
+              <h2>Artists</h2>
+            </DropdownItem>
+            {/* dynamically display artists */}
+            {[...AdvanceNavContentData[0].collections]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item, index) => (
+                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+              ))}
+          </div>
+        </CSSTransition>
+        {/* for displaying all price */}
+        <CSSTransition
+          in={activeMenu === "price"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
+              <h2>Price</h2>
+            </DropdownItem>
+            {/* dynamically display price */}
+            {[...AdvanceNavContentData[1].collections]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item, index) => (
+                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+              ))}
+          </div>
+        </CSSTransition>
+
+        {/* for displaying all medium */}
+        <CSSTransition
+          in={activeMenu === "medium"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
+              <h2>Medium</h2>
+            </DropdownItem>
+            {/* dynamically display subject */}
+            {[...AdvanceNavContentData[2].collections]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item, index) => (
+                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+              ))}
+          </div>
+        </CSSTransition>
+        {/* for displaying all Subject */}
+        <CSSTransition
+          in={activeMenu === "subject"}
+          timeout={500}
+          classNames="menu-secondary"
+          unmountOnExit
+          onEnter={calcHeight}
+        >
+          <div className="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-md ">
+            <DropdownItem goToMenu="shop" leftIcon={<BsArrowLeft />}>
+              <h2>Subject</h2>
+            </DropdownItem>
+            {/* dynamically display Subject */}
+            {[...AdvanceNavContentData[3].collections]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item, index) => (
+                <DropdownItem key={index + 1}>{item.name}</DropdownItem>
+              ))}
           </div>
         </CSSTransition>
       </div>

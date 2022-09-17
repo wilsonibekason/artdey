@@ -13,6 +13,8 @@ const NavbarTop = () => {
     AiOutlineMenu,
     showMobileNav,
     dropdownOpen,
+    DropdownOpen,
+    AiOutlineClose,
   } = useIcon();
   const { flexRowJustify, flexRow, transitions } = styles;
   return (
@@ -25,12 +27,19 @@ const NavbarTop = () => {
               className={`font-light text-gray-500 hover:scale-105 ${transitions} hidden md:hidden cursor-pointer lg:block`}
               onClick={openModal}
             />
-            <AiOutlineMenu
-              size={25}
-              className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block cursor-pointer  tablet:block desktop:hidden Xdesktop:hidden`}
-              // onClick={showMobileNav}
-              onClick={dropdownOpen}
-            />
+            {!DropdownOpen ? (
+              <AiOutlineMenu
+                size={25}
+                className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block cursor-pointer  tablet:block desktop:hidden Xdesktop:hidden`}
+                onClick={dropdownOpen}
+              />
+            ) : (
+              <AiOutlineClose
+                size={25}
+                className={`font-light text-gray-500 hover:scale-105 ${transitions} phone:block cursor-pointer  tablet:block desktop:hidden Xdesktop:hidden`}
+                onClick={dropdownOpen}
+              />
+            )}
           </div>
           <div>
             <Link to="/">
