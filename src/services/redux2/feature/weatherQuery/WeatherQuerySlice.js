@@ -49,4 +49,5 @@ export const {
   useAddWeatherMutation,
   useDeleteWeatherMutation,
   useGetWeatherByIdQuery,
+  useUpdateWeatherMutation,
 } = weatherApi;
